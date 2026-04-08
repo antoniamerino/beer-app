@@ -1,0 +1,241 @@
+.tasting-sheet-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-md);
+}
+
+.tasting-sheet-page__back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-xl);
+  transition: color var(--transition);
+}
+
+.tasting-sheet-page__back:hover {
+  color: var(--green-primary);
+}
+
+/* ---- Beer hero ---- */
+.beer-hero {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-xl);
+  align-items: start;
+}
+
+.beer-hero__photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--border-card);
+}
+
+.beer-hero__photo-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: linear-gradient(135deg, var(--gold-pale), var(--green-pale));
+  border-radius: var(--radius-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+}
+
+.beer-hero__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.beer-hero__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.beer-hero__name {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.beer-hero__brewery {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.beer-hero__score {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.beer-hero__score-value {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  line-height: 1;
+}
+
+.beer-hero__score-max {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+.beer-hero__date {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* ---- Tasting detail ---- */
+.tasting-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-card);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.tasting-section h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--gold-primary);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid rgba(200, 160, 48, 0.25);
+}
+
+.tasting-attrs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--space-md);
+}
+
+.tasting-attr__label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.tasting-attr__value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.tasting-notes-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.tasting-note-chip {
+  background: var(--gold-pale);
+  border: 1px solid rgba(200, 160, 48, 0.3);
+  color: var(--gold-light);
+  border-radius: var(--radius-badge);
+  padding: 3px 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.bitterness-display {
+  display: flex;
+  gap: 6px;
+}
+
+.bitterness-display-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--border-light);
+  background: var(--bg-page);
+}
+
+.bitterness-display-dot--filled {
+  background: var(--gold-primary);
+  border-color: var(--gold-primary);
+}
+
+.tasting-comment {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* ---- Multiple tastings tabs ---- */
+.tastings-nav {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.tastings-nav__btn {
+  background: none;
+  border: 1px solid var(--border-input);
+  border-radius: var(--radius-btn);
+  padding: 6px var(--space-md);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all var(--transition);
+  color: var(--text-secondary);
+}
+
+.tastings-nav__btn--active {
+  background: var(--gold-primary);
+  border-color: var(--gold-primary);
+  color: #16263a;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .tasting-sheet-page {
+    padding: var(--space-md) var(--space-sm);
+  }
+
+  .beer-hero {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  /* On mobile show photo at natural 4:5 but capped */
+  .beer-hero__photo {
+    width: 100%;
+    max-width: 220px;
+    aspect-ratio: 4 / 5;
+    border-radius: var(--radius-card);
+  }
+
+  .beer-hero__photo-placeholder {
+    width: 100%;
+    max-width: 220px;
+    border-radius: var(--radius-card);
+  }
+
+  .beer-hero__name {
+    font-size: 1.4rem;
+  }
+
+  .beer-hero__score-value {
+    font-size: 2.2rem;
+  }
+
+  .tasting-attrs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tasting-section {
+    padding: var(--space-md);
+  }
+}

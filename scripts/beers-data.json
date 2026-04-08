@@ -1,0 +1,3236 @@
+[
+  {
+    "name": "Calafate",
+    "brewery": "Austral",
+    "style": "Fruit Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 9,
+      "aroma_intensity": "Moderado",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "free_notes": "Dulce, sabrosa, con aroma.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Lager",
+    "brewery": "Austral",
+    "style": "Lager",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 5,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Liviano",
+      "free_notes": "Bien liviana, poco sabor. Fome.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Patagona 508",
+    "brewery": "Austral",
+    "style": "Amber Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Caramelo"],
+      "flavor_notes": ["Caramelo"],
+      "free_notes": "Sabor acaramelado, dulzona.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Ruibarbo",
+    "brewery": "Austral",
+    "style": "Fruit Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "aroma_intensity": "Fuerte",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "body": "Espeso",
+      "free_notes": "Sabor fuerte, muy dulce, más pesada.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Yagan",
+    "brewery": "Austral",
+    "style": "Dark Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Tostado"],
+      "flavor_notes": ["Tostado"],
+      "body": "Liviano",
+      "free_notes": "Sabor tostado pero suave, no tan sabrosa. No tanto cuerpo, refrescante. Toque a alcohol.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Red Lager",
+    "brewery": "Austral",
+    "style": "Red Lager",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Caramelo",
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": ["Caramelo"],
+      "body": "Liviano",
+      "free_notes": "Color caramelo. Suave, sabrosa, liviana.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Lager",
+    "brewery": "Kunstmann",
+    "style": "Lager",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Miel"],
+      "flavor_notes": ["Miel"],
+      "body": "Medio",
+      "free_notes": "Refrescante y con cuerpo, con sabor dulce, toque muy suave a miel.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Miel",
+    "brewery": "Kunstmann",
+    "style": "Honey Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 4,
+      "aroma_intensity": "Fuerte",
+      "aroma_notes": ["Miel"],
+      "flavor_notes": ["Miel"],
+      "body": "Espeso",
+      "free_notes": "Buen aroma. Bastante cuerpo, pero muy dulce. Hostigante.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Torobayo",
+    "brewery": "Kunstmann",
+    "style": "Pale Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "bitterness": 3,
+      "free_notes": "Suave, sabrosa, se siente amargor.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Lager sin filtrar",
+    "brewery": "Kunstmann",
+    "style": "Unfiltered Lager",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "free_notes": "Rica. Refrescante y con sabor.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "IPA",
+    "brewery": "Kunstmann",
+    "style": "IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Dorado",
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Fuerte",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "bitterness": 4,
+      "free_notes": "Color claro, turbio. Poca espuma. Buen aroma frutal, marcado. Sabrosa, bien amarga.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Arándano",
+    "brewery": "Kunstmann",
+    "style": "Fruit Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 4,
+      "color": "Cobre",
+      "turbidity": "Transparente",
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "free_notes": "Olor suave y bastante dulzón. Sabor demasiado dulce, sabor a jugo de berries.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Maqui",
+    "brewery": "D'olbek",
+    "style": "Fruit Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "body": "Liviano",
+      "free_notes": "Suave, liviana y sabrosa.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Ale",
+    "brewery": "D'olbek",
+    "style": "Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Dorado",
+      "turbidity": "Turbio",
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "bitterness": 3,
+      "alcohol_presence": "Suave",
+      "free_notes": "Color dorado turbio, buena espuma. Amarga, sabor suave, se siente el alcohol.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Chocolate",
+    "brewery": "Volcanes del Sur",
+    "style": "Chocolate Stout",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 4,
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Chocolate"],
+      "flavor_notes": ["Chocolate"],
+      "body": "Espeso",
+      "free_notes": "Muy densa y pesada, extremadamente dulce.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "IPA",
+    "brewery": "Volcanes del Sur",
+    "style": "IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Liviano",
+      "bitterness": 2,
+      "free_notes": "No mucho aroma. Dulce, muy sabrosa. Poco amarga. Liviana.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Strong Lager",
+    "brewery": "Volcanes del Sur",
+    "style": "Strong Lager",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Medio",
+      "free_notes": "Con cuerpo, sabrosa pero no demasiado. Buena lager.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Premium Lager",
+    "brewery": "Volcanes del Sur",
+    "style": "Lager",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 5,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Liviano",
+      "free_notes": "Fresca y liviana. Lager cualquiera.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Doppelbock",
+    "brewery": "Volcanes del Sur",
+    "style": "Doppelbock",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "aroma_intensity": "Imperceptible",
+      "aroma_notes": ["Tostado"],
+      "flavor_notes": ["Tostado"],
+      "body": "Medio",
+      "bitterness": 1,
+      "free_notes": "Sin aroma. Buen sabor tostado, suave, no amargo. Cuerpo suave.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Lager sin filtrar",
+    "brewery": "Volcanes del Sur",
+    "style": "Unfiltered Lager",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Medio",
+      "foam_amount": "Escasa",
+      "free_notes": "Color lager clásico, poca espuma. Bastante sabrosa, suave y con cuerpo moderado. Buena.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Pale Ale",
+    "brewery": "Del Puerto",
+    "style": "Pale Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Liviano",
+      "free_notes": "Poco aroma. Sabrosa, pero no mucho. Liviana.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Porter",
+    "brewery": "Del Puerto",
+    "style": "Porter",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Tostado", "Café", "Chocolate"],
+      "flavor_notes": ["Tostado", "Café", "Chocolate"],
+      "bitterness": 2,
+      "free_notes": "Buen sabor tostado, con toques de café y chocolate. No muy amarga.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Scottish Amber Ale",
+    "brewery": "Del Puerto",
+    "style": "Scottish Amber Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "color": "Rojizo",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Tostado", "Caramelo"],
+      "flavor_notes": ["Tostado", "Caramelo"],
+      "carbonation": "Baja",
+      "free_notes": "Color rojizo, aroma suave. Sabor tostado, suave, acaramelado. Le falta un poco de gas.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Pale Ale",
+    "brewery": "Guayacán",
+    "style": "Pale Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Espeso",
+      "bitterness": 3,
+      "free_notes": "Muy sabrosa, con tono amargo al final. Harto cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Golden Ale",
+    "brewery": "Guayacán",
+    "style": "Golden Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Liviano",
+      "free_notes": "Liviana y sabrosa.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "IPA",
+    "brewery": "Guayacán",
+    "style": "IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "aroma_intensity": "Fuerte",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "alcohol_presence": "Suave",
+      "free_notes": "Mucho aroma. Más olor que sabor. Tono alcohol al final.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Stout",
+    "brewery": "Guayacán",
+    "style": "Stout",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Tostado", "Chocolate"],
+      "flavor_notes": ["Tostado", "Chocolate"],
+      "body": "Espeso",
+      "alcohol_presence": "Suave",
+      "free_notes": "Mucho cuerpo. Sabor tostado con toque de alcohol y chocolate.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Hazy Lager",
+    "brewery": "Guayacán",
+    "style": "Hazy Lager",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 5,
+      "color": "Dorado",
+      "turbidity": "Semi-turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "bitterness": 3,
+      "free_notes": "Aroma dulce, toque a fruta. Cerveza no muy sabrosa, con toque dulce al principio, amargo al final.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Hazy APA",
+    "brewery": "Guayacán",
+    "style": "APA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Dorado",
+      "turbidity": "Opaco",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal", "Ácido"],
+      "flavor_notes": ["Frutal"],
+      "bitterness": 4,
+      "free_notes": "Aroma un poco ácido, al principio frutal. Sabor frutal suave, con amargor marcado.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Hoppines IPA",
+    "brewery": "Tübinger",
+    "style": "IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "aroma_intensity": "Fuerte",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "bitterness": 4,
+      "free_notes": "Buen aroma con toque a papaya, más olorosa que sabrosa. Dulce al principio, con harto amargor al final.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Pale Ale",
+    "brewery": "Tübinger",
+    "style": "Pale Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Medio",
+      "free_notes": "Poco aroma. Muy sabrosa, con buen cuerpo. Muy equilibrada.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Irish Red Ale",
+    "brewery": "Tübinger",
+    "style": "Irish Red Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "color": "Rojizo",
+      "turbidity": "Turbio",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Tostado"],
+      "flavor_notes": ["Tostado"],
+      "free_notes": "Poco aroma. Color rojizo, turbia. Sabor tostado, suave. No muy sabrosa.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Strong Dark Ale",
+    "brewery": "Tübinger",
+    "style": "Strong Dark Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Negro",
+      "turbidity": "Opaco",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Tostado"],
+      "flavor_notes": ["Tostado"],
+      "body": "Espeso",
+      "bitterness": 2,
+      "alcohol_presence": "Marcado",
+      "free_notes": "Aroma muy suave, tostado. Sabor tostado, con gusto a alcohol marcado. Bastante cuerpo, poco amarga.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Märzen Lager",
+    "brewery": "La Montaña",
+    "style": "Märzen",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 5,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Liviano",
+      "free_notes": "Liviana, poco sabor.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "IPA",
+    "brewery": "La Montaña",
+    "style": "IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "aroma_intensity": "Fuerte",
+      "aroma_notes": ["Herbal"],
+      "flavor_notes": ["Herbal"],
+      "bitterness": 4,
+      "free_notes": "Muy buen aroma, con toque a menta/malesa. Bien amarga en el paladar, con sabor a planta.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Yuta (Rauchbier)",
+    "brewery": "La Montaña",
+    "style": "Rauchbier",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Caramelo",
+      "foam_amount": "Abundante",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Ahumado"],
+      "flavor_notes": ["Ahumado"],
+      "free_notes": "Aroma suave ahumado. Sabor muy ahumado, con toque a cuero.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Golden Pale Ale",
+    "brewery": "Kross",
+    "style": "Golden Pale Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Liviano",
+      "free_notes": "Suave, refrescante. Sabrosa.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Kross 5",
+    "brewery": "Kross",
+    "style": "Pale Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Medio",
+      "free_notes": "Con cuerpo y sabrosa.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Lupulus",
+    "brewery": "Kross",
+    "style": "Hoppy Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 9,
+      "aroma_intensity": "Fuerte",
+      "aroma_notes": ["Frutal", "Resinoso"],
+      "flavor_notes": ["Frutal"],
+      "bitterness": 2,
+      "free_notes": "Muy buen aroma. Muy sabrosa, poco amarga.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Kross 5 Pisco",
+    "brewery": "Kross",
+    "style": "Specialty Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Caramelo"],
+      "flavor_notes": ["Caramelo"],
+      "free_notes": "Sabrosa, con toques dulces y amargos. Un poco de caramelo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Stout",
+    "brewery": "Kross",
+    "style": "Stout",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Caramelo", "Tostado"],
+      "flavor_notes": ["Tostado", "Caramelo"],
+      "body": "Espeso",
+      "bitterness": 3,
+      "free_notes": "Poco aroma, buen gusto amargo, tostado. Toque a caramelo. Bastante cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "K18 Strong Lager",
+    "brewery": "Kross",
+    "style": "Strong Lager",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Cobre",
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Moderado",
+      "aroma_notes": ["Caramelo"],
+      "flavor_notes": ["Caramelo"],
+      "body": "Espeso",
+      "alcohol_presence": "Moderado",
+      "free_notes": "Aroma con toque marcado a alcohol. Sabor acaramelado, dulzona, con toque a alcohol. Mucho cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "K44 Lager",
+    "brewery": "Kross",
+    "style": "Lager",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Dorado",
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "body": "Liviano",
+      "carbonation": "Baja",
+      "free_notes": "Aroma frutal dulce y suave. Cerveza liviana, toque a papaya, poco gas.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "K110 Scotch Ale",
+    "brewery": "Kross",
+    "style": "Scotch Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "color": "Caramelo",
+      "turbidity": "Turbio",
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "alcohol_presence": "Marcado",
+      "free_notes": "Olor suave, marcado a alcohol. Sabor amargo y algo dulce, marcado toque a alcohol.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Odissea Hoppy Ale",
+    "brewery": "Kross",
+    "style": "Hoppy Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Dorado",
+      "turbidity": "Opaco",
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Herbal"],
+      "flavor_notes": ["Herbal"],
+      "body": "Liviano",
+      "free_notes": "Aroma un poco pastoso, toque parecido a la mantequilla. Cerveza sabrosa, con toque leve a mantequilla al final, suavemente lupulada. Refrescante.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "APA",
+    "brewery": "Mestra",
+    "style": "APA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "free_notes": "Aroma suave. No muy sabrosa.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Strong Ale",
+    "brewery": "Mestra",
+    "style": "Strong Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Cobre",
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Herbal"],
+      "flavor_notes": ["Herbal"],
+      "body": "Medio",
+      "bitterness": 4,
+      "free_notes": "Sabor vegetal, amarga. Con cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Amber Ale",
+    "brewery": "Mestra",
+    "style": "Amber Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7.5,
+      "color": "Cobre",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "free_notes": "Color cobre, poca espuma. Sabor dulce, sabrosa.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Stout Ale",
+    "brewery": "Mestra",
+    "style": "Stout",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7.5,
+      "color": "Negro",
+      "turbidity": "Semi-turbio",
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Moderado",
+      "aroma_notes": ["Café", "Tostado"],
+      "flavor_notes": ["Café", "Tostado"],
+      "free_notes": "Sabor equilibrado, toque marcado a café tostado.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Scotch Ale",
+    "brewery": "Mestra",
+    "style": "Scotch Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 5,
+      "color": "Caramelo",
+      "foam_amount": "Escasa",
+      "carbonation": "Baja",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Caramelo", "Chocolate", "Tostado"],
+      "flavor_notes": ["Caramelo"],
+      "alcohol_presence": "Marcado",
+      "free_notes": "Aroma suave a caramelo (toffee) y chocolate y tostado. Cerveza no muy sabrosa, con dejo a alcohol más marcado que el sabor.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Amber Ale",
+    "brewery": "Quimera",
+    "style": "Amber Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Medio",
+      "bitterness": 3,
+      "free_notes": "Aroma suave, rico. Sabor amargo, toques dulces. Deja amargor al final. Cuerpo marcado.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Pale Ale",
+    "brewery": "Quimera",
+    "style": "Pale Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6.5,
+      "aroma_intensity": "Moderado",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "body": "Liviano",
+      "free_notes": "Buen aroma, un poco frutal. Sabor no tan amargo, frutal, no se mantiene mucho.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "IPA",
+    "brewery": "Quimera",
+    "style": "IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "color": "Dorado",
+      "turbidity": "Transparente",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": [],
+      "body": "Liviano",
+      "free_notes": "Aroma suave, poco frutal. No muy sabrosa, sin sabor frutal, medio pastoso. Liviana.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Resinosa Hazy IPA",
+    "brewery": "Jester",
+    "style": "Hazy IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Dorado",
+      "turbidity": "Opaco",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Resinoso"],
+      "flavor_notes": ["Resinoso"],
+      "body": "Espeso",
+      "bitterness": 4,
+      "free_notes": "Color amarillento, poca espuma. Aroma liviano. Sabrosa, bastante cuerpo, amarga.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "El Retorno",
+    "brewery": "Jester",
+    "style": "West Coast IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 9,
+      "color": "Dorado",
+      "turbidity": "Transparente",
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Fuerte",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "body": "Espeso",
+      "bitterness": 3,
+      "free_notes": "Aroma frutal con toque a papaya. Muy sabrosa, espesa, frutal con toque a papaya.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "England IPA",
+    "brewery": "Jester",
+    "style": "English IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "color": "Dorado",
+      "turbidity": "Opaco",
+      "aroma_intensity": "Moderado",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "bitterness": 4,
+      "free_notes": "Buen aroma frutoso. Sabor amargo, frutoso, toque muy suave como a papaya.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "New England Style IPA",
+    "brewery": "Jester",
+    "style": "New England IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 9,
+      "aroma_intensity": "Moderado",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "free_notes": "Nota 9.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Manitoba APA",
+    "brewery": "Jester",
+    "style": "APA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "color": "Dorado",
+      "turbidity": "Semi-turbio",
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "body": "Liviano",
+      "bitterness": 2,
+      "free_notes": "Aroma con suave toque a papaya. Cerveza sabrosa, sabor frutal con amargor suave. Muy equilibrada.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "La Nube Hazy Pale Ale",
+    "brewery": "Jester",
+    "style": "Hazy Pale Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Dorado",
+      "turbidity": "Opaco",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "body": "Espeso",
+      "free_notes": "Aroma suave con toque a fruta. Cerveza densa, sabor frutal suave, harto cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Don Manu IPA",
+    "brewery": "Tropera",
+    "style": "IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "aroma_intensity": "Moderado",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "body": "Medio",
+      "bitterness": 2,
+      "free_notes": "Buen aroma. Gustosa, no tan amarga, pero con cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Bota Sucia",
+    "brewery": "Tropera",
+    "style": "Blanche",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "carbonation": "Baja",
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": ["Herbal"],
+      "body": "Medio",
+      "free_notes": "Decolorida y con poco gas/espuma. Liviana, con algo de cuerpo. Sabrosa, con marcado sabor a trigo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Strong #47",
+    "brewery": "Tropera",
+    "style": "Strong Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "color": "Caramelo",
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Tostado"],
+      "flavor_notes": ["Tostado"],
+      "body": "Espeso",
+      "bitterness": 2,
+      "free_notes": "Sabor tostado, tipo porter; harto cuerpo, amargor no muy fuerte.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Puñal Krystal",
+    "brewery": "Tropera",
+    "style": "Kristallweizen",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 3,
+      "color": "Dorado",
+      "turbidity": "Transparente",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Imperceptible",
+      "aroma_notes": [],
+      "flavor_notes": ["Ácido"],
+      "free_notes": "Muy decolorida, transparente, poca espuma. No tiene aroma. Muy ácida al principio, sabor con dejo a pan al final.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Crazy Juan",
+    "brewery": "Tropera",
+    "style": "American Brown Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "color": "Café",
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Moderado",
+      "aroma_notes": ["Tostado", "Café", "Chocolate"],
+      "flavor_notes": ["Tostado", "Chocolate"],
+      "bitterness": 3,
+      "free_notes": "Aroma tostado, con toques a café y chocolate amargo. Sabor tostado, con toque suave a chocolate después de tragar. Buen amargor.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Amber Ale",
+    "brewery": "J. Bello",
+    "style": "Amber Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "aroma_intensity": "Moderado",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "bitterness": 2,
+      "free_notes": "Buen aroma. Muy sabrosa. No muy amarga.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Black IPA",
+    "brewery": "Hasta Pronto",
+    "style": "Black IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "color": "Negro",
+      "aroma_intensity": "Fuerte",
+      "aroma_notes": ["Tostado"],
+      "flavor_notes": ["Tostado"],
+      "body": "Espeso",
+      "bitterness": 4,
+      "free_notes": "Color tostado, mucho aroma. Muy sabrosa, amarga, harto cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "West Coast IPA",
+    "brewery": "Hasta Pronto",
+    "style": "West Coast IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "free_notes": "Nota 7.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Doble IPA",
+    "brewery": "Hasta Pronto",
+    "style": "Double IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "color": "Dorado",
+      "turbidity": "Opaco",
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "bitterness": 3,
+      "free_notes": "Cerveza rubia y opaca, espuma persistente. Aroma frutal no muy fuerte. Sabrosa, toques frutales equilibrados y amargor final bueno.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "APA",
+    "brewery": "Hasta Pronto",
+    "style": "APA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8.5,
+      "color": "Dorado",
+      "turbidity": "Opaco",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "bitterness": 3,
+      "free_notes": "Amarillo claro y opaco, poca espuma. Aroma no muy agradable. Muy sabrosa, equilibrio perfecto entre amargor, sabor y cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Hazy IPA",
+    "brewery": "Hasta Pronto",
+    "style": "Hazy IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Dorado",
+      "turbidity": "Opaco",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal", "Ácido"],
+      "flavor_notes": ["Frutal"],
+      "bitterness": 4,
+      "free_notes": "Color rubio opaco, poca espuma persistente. Aroma un poco ácido, frutal suave. Cerveza de entrada amarga, luego dulzor suave y frutal.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Micro Dosis",
+    "brewery": "Hasta Pronto",
+    "style": "Hoppy Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "body": "Liviano",
+      "free_notes": "Aroma frutal suave, buena espuma persistente. Sabor con toques frutales suaves, liviana. Muy buena.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Blonde Ale",
+    "brewery": "Nómade",
+    "style": "Blonde Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "turbidity": "Turbio",
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Moderado",
+      "aroma_notes": ["Cítrico"],
+      "flavor_notes": ["Cítrico", "Ácido"],
+      "free_notes": "Buen aroma, suave. Color turbio, espuma persistente. Buen sabor, ácido con toque cítricos.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "American Stout",
+    "brewery": "Coda",
+    "style": "Stout",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Negro",
+      "turbidity": "Opaco",
+      "aroma_intensity": "Moderado",
+      "aroma_notes": ["Tostado"],
+      "flavor_notes": ["Tostado"],
+      "bitterness": 4,
+      "alcohol_presence": "Suave",
+      "free_notes": "Aroma suave pero marcado. Sabor fuerte con marcado toque tostado. Amarga, se siente el alcohol.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Pre Prohibition Lager",
+    "brewery": "Coda",
+    "style": "Lager",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Dorado",
+      "turbidity": "Semi-turbio",
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Moderado",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Liviano",
+      "bitterness": 2,
+      "free_notes": "Buen aroma (para ser lager). Rica, aunque no mucho sabor, algo amarga. Cerveza liviana y con poco cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Rye IPA",
+    "brewery": "Coda",
+    "style": "Rye IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Ácido"],
+      "flavor_notes": ["Frutal"],
+      "body": "Espeso",
+      "bitterness": 4,
+      "free_notes": "Aroma ácido. Sabor suave, con toque a papaya. Amarga. Harto cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Harmony APA",
+    "brewery": "Coda",
+    "style": "APA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "turbidity": "Turbio",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "body": "Espeso",
+      "bitterness": 4,
+      "free_notes": "Aroma suave, frutal. Bastante cuerpo, amarga. No muy sabrosa.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "IPA",
+    "brewery": "Khronos",
+    "style": "IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "body": "Liviano",
+      "bitterness": 3,
+      "free_notes": "Aroma suave, frutoso. Sabrosa, un poco amarga. Liviana, no mucho cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Hoppy Blonde",
+    "brewery": "Khronos",
+    "style": "Blonde Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 5,
+      "color": "Café",
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Ácido"],
+      "flavor_notes": ["Ácido"],
+      "body": "Liviano",
+      "free_notes": "Aroma suave, un poco ácido. Poco sabor, con marcado dejo ácido al final. Poco cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Pale Ale",
+    "brewery": "Khronos",
+    "style": "Pale Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7.5,
+      "color": "Dorado",
+      "turbidity": "Semi-turbio",
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Medio",
+      "alcohol_presence": "Suave",
+      "free_notes": "Color dorado oscuro, poco turbia, buena espuma. Aroma suave, un poco a alcohol. Sabrosa, se le siente el alcohol. Con cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Berries",
+    "brewery": "Khronos",
+    "style": "Fruit Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "color": "Cobre",
+      "turbidity": "Semi-turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Fuerte",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "body": "Liviano",
+      "free_notes": "Aroma dulce, frutoso (marcado berries). Muy dulce, sabor frutoso. Cuerpo suave, más bien liviana.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Stout",
+    "brewery": "Khronos",
+    "style": "Stout",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "color": "Negro",
+      "turbidity": "Opaco",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Tostado"],
+      "flavor_notes": ["Tostado"],
+      "alcohol_presence": "Suave",
+      "free_notes": "Poco aroma. Sabor tostado suave, con toque de alcohol. Un poco fome.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Barley Wine",
+    "brewery": "Khronos",
+    "style": "Barley Wine",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6.5,
+      "color": "Caramelo",
+      "turbidity": "Opaco",
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "bitterness": 3,
+      "free_notes": "Color caramelo oscuro, poco aroma. Cerveza amarga al principio, dulce al final.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "West Coast IPA",
+    "brewery": "Tamango",
+    "style": "West Coast IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7.5,
+      "color": "Dorado",
+      "turbidity": "Transparente",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Fuerte",
+      "aroma_notes": ["Resinoso"],
+      "flavor_notes": [],
+      "body": "Medio",
+      "bitterness": 4,
+      "alcohol_presence": "Suave",
+      "free_notes": "Olor fuerte, color pálido y claro. Cerveza amarga, con cuerpo. Toque a alcohol muy leve. Rica.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Doble Hazy IPA",
+    "brewery": "Tamango",
+    "style": "Double Hazy IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7.5,
+      "color": "Dorado",
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal", "Ácido"],
+      "flavor_notes": ["Frutal", "Ácido"],
+      "bitterness": 3,
+      "free_notes": "Color rubio turbio. Sabor frutal, un poco ácido. Amargor en buen punto.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Double IPA",
+    "brewery": "Tamango",
+    "style": "Double IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Dorado",
+      "turbidity": "Semi-turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Ácido"],
+      "flavor_notes": ["Frutal"],
+      "bitterness": 4,
+      "free_notes": "Aroma un poco ácido. Amarga al principio, sabor frutoso suave. No deja amargor en la boca.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Bahia",
+    "brewery": "Tamango",
+    "style": "Fruit Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 3,
+      "color": "Dorado",
+      "turbidity": "Semi-turbio",
+      "aroma_intensity": "Fuerte",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal", "Ácido"],
+      "free_notes": "Aroma muy frutal cargado a la maracuyá. Sabor demasiado ácido.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Brazilian Wax",
+    "brewery": "Tamango",
+    "style": "IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Dorado",
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Fuerte",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "body": "Espeso",
+      "bitterness": 3,
+      "free_notes": "Aroma frutoso fuerte con toque a papaya. Sabrosa, toques frutales marcados y amargor al final. Harto cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Sunset",
+    "brewery": "Tamango",
+    "style": "Dark Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "color": "Negro",
+      "turbidity": "Opaco",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Caramelo", "Café"],
+      "flavor_notes": ["Caramelo", "Café"],
+      "bitterness": 2,
+      "free_notes": "Colorada oscura, casi negra. Cerveza dulce, con toque amargo a café al final, notas acarameladas.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Humboldt Lager",
+    "brewery": "Tamango",
+    "style": "Lager",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 5,
+      "color": "Dorado",
+      "turbidity": "Transparente",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Imperceptible",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Liviano",
+      "free_notes": "Cerveza rubia transparente, poca espuma, sin aroma. Lager suave, sabrosa dentro de. Cerveza promedio.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Vaquero",
+    "brewery": "Tamango",
+    "style": "Lager",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "color": "Dorado",
+      "turbidity": "Transparente",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Herbal"],
+      "flavor_notes": ["Herbal"],
+      "bitterness": 3,
+      "free_notes": "Aroma con suave toque dulce. Sabor más amargo con toques dulces, dejo a hierba final.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Red Nose Strong Festive Ale",
+    "brewery": "Tamango",
+    "style": "Strong Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "color": "Cobre",
+      "turbidity": "Opaco",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Resinoso"],
+      "flavor_notes": ["Resinoso", "Ácido"],
+      "body": "Espeso",
+      "bitterness": 4,
+      "carbonation": "Baja",
+      "free_notes": "Suave aroma resinoso. Sabor un poco ácido, con marcado toque a resina y amargor final. Carbonatación baja, bastante cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Pale Ale Ambar",
+    "brewery": "Cuello Negro",
+    "style": "Amber Pale Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7.5,
+      "color": "Caramelo",
+      "turbidity": "Transparente",
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Espeso",
+      "bitterness": 4,
+      "alcohol_presence": "Suave",
+      "free_notes": "Bastante sabrosa, bien amarga. Se siente el toque a alcohol. Harto cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Amber",
+    "brewery": "Cuello Negro",
+    "style": "Amber Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7.5,
+      "color": "Dorado",
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "bitterness": 4,
+      "free_notes": "Color dorado oscuro, turbio. Cerveza un tanto dulce, con marcado amargor al final.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Pale Ale",
+    "brewery": "+56",
+    "style": "Pale Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Dorado",
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Cítrico"],
+      "flavor_notes": ["Cítrico"],
+      "body": "Medio",
+      "bitterness": 3,
+      "free_notes": "Con buen sabor, toques suaves a cítrico. Amargor al final.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "IPA",
+    "brewery": "+56",
+    "style": "IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "turbidity": "Turbio",
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": ["Frutal"],
+      "bitterness": 4,
+      "free_notes": "Poco aroma. Sabor muy dulce, poco frutal. Amarga.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Scottish Ale",
+    "brewery": "+56",
+    "style": "Scottish Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "color": "Cobre",
+      "turbidity": "Opaco",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Medio",
+      "free_notes": "Color cobre oscuro, espuma no muy persistente. Sabor suave, dulce. Con cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Scottish",
+    "brewery": "Golliarda Valiente",
+    "style": "Scottish Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Rojizo",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "bitterness": 3,
+      "alcohol_presence": "Suave",
+      "free_notes": "Color colorado oscuro. Sabor amargo con toque a alcohol, un poco dulce equilibrado.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "El Llano Pale Ale",
+    "brewery": "Ecold Putaendo",
+    "style": "Pale Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "color": "Cobre",
+      "turbidity": "Semi-turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "alcohol_presence": "Suave",
+      "free_notes": "Aroma con toque a alcohol. Muy sabrosa, frutosa suave, con toques dulces.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Sunrise Vibes East Coast IPA",
+    "brewery": "Cuento Corto (Piriz)",
+    "style": "East Coast IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "turbidity": "Turbio",
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "bitterness": 3,
+      "free_notes": "Aroma suave no muy rico. Sabor suave, buen amargor, dulce. Rica.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Gheapy IPA",
+    "brewery": "Cuento Corto (Piriz)",
+    "style": "IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7.5,
+      "color": "Dorado",
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "body": "Espeso",
+      "bitterness": 4,
+      "alcohol_presence": "Suave",
+      "free_notes": "Aroma liviano, frutal. Sabrosa, bastante amarga. Harto cuerpo, buen toque a alcohol.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Sunset Vibes West Coast IPA",
+    "brewery": "Cuento Corto (Piriz)",
+    "style": "West Coast IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Dorado",
+      "turbidity": "Opaco",
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Fuerte",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal", "Ácido"],
+      "body": "Espeso",
+      "bitterness": 5,
+      "free_notes": "Aroma muy frutal. No muy sabrosa, bastante amarga y pesada. Toque agrio al final. Mucho cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Vinilo Hazy Pale Ale",
+    "brewery": "Cuento Corto (Piriz)",
+    "style": "Hazy Pale Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Dorado",
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Moderado",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "body": "Espeso",
+      "bitterness": 4,
+      "free_notes": "Buen aroma suave. Cerveza amarga, con toques frutales marcados. Bastante cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Lupulín APA",
+    "brewery": "Cuento Corto (Piriz)",
+    "style": "APA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "color": "Dorado",
+      "turbidity": "Semi-turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Moderado",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "bitterness": 3,
+      "free_notes": "Aroma frutal suave, denso. Sabor frutal suave, amarga, con un buen equilibrio.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "IPA",
+    "brewery": "Die Al",
+    "style": "IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 4,
+      "color": "Cobre",
+      "turbidity": "Opaco",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Ácido"],
+      "flavor_notes": ["Ácido"],
+      "bitterness": 4,
+      "free_notes": "Aroma ácido, con toque a aceituna. Cerveza muy ácida, no muy sabrosa. Dejo amargo en el paladar al final.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Rubia Quinchilca",
+    "brewery": "Sayka",
+    "style": "Blonde Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "color": "Cobre",
+      "turbidity": "Semi-turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Café"],
+      "flavor_notes": ["Café"],
+      "free_notes": "Cerveza de sabor suave, con pequeños tonos de café.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Dayoff APA",
+    "brewery": "Soko's",
+    "style": "APA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "color": "Cobre",
+      "turbidity": "Opaco",
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "body": "Medio",
+      "bitterness": 3,
+      "free_notes": "Aroma suave y frutoso. Cerveza amarga, con toques frutales suaves. Buen cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Sunny Waves",
+    "brewery": "Soko's",
+    "style": "Blonde Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "turbidity": "Opaco",
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Imperceptible",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Espeso",
+      "bitterness": 4,
+      "free_notes": "Aroma casi imperceptible. Espuma persistente. Sabor amargo cargado a la malta, harto cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Cosmic Walk Dark Strong Ale",
+    "brewery": "Soko's",
+    "style": "Dark Strong Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6.5,
+      "color": "Café",
+      "turbidity": "Opaco",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Imperceptible",
+      "aroma_notes": ["Café"],
+      "flavor_notes": ["Café"],
+      "body": "Espeso",
+      "alcohol_presence": "Marcado",
+      "free_notes": "Aroma casi imperceptible. Sabor marcado a alcohol, con toque a café. Harto cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Red Passion Raspberry Ale",
+    "brewery": "Soko's",
+    "style": "Fruit Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 5,
+      "color": "Rojizo",
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal", "Ácido"],
+      "free_notes": "Aroma suave a frambuesa. Cerveza dulce, con sabor marcado a frambuesa y un toque ácido.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Ninfa Irish Red Ale",
+    "brewery": "Bundor",
+    "style": "Irish Red Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8.5,
+      "color": "Cobre",
+      "turbidity": "Semi-turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Imperceptible",
+      "aroma_notes": ["Caramelo"],
+      "flavor_notes": ["Caramelo"],
+      "bitterness": 3,
+      "free_notes": "Aroma casi imperceptible. Cerveza de sabor dulce, con toques marcados a caramelo y toffee. Amargor final.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Nessie Wee Heavy",
+    "brewery": "Bundor",
+    "style": "Wee Heavy",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "color": "Cobre",
+      "turbidity": "Transparente",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Chocolate", "Tostado"],
+      "flavor_notes": ["Chocolate", "Tostado"],
+      "body": "Liviano",
+      "free_notes": "Aroma dulce a chocolate amargo. Cerveza con muy buen equilibrio entre lo dulce y lo amargo, con toques tostados y a chocolate suave. Liviana para ser tipo stout.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Hop Bomb Doble IPA",
+    "brewery": "El Growler",
+    "style": "Double IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 9,
+      "color": "Dorado",
+      "turbidity": "Opaco",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Moderado",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "bitterness": 3,
+      "free_notes": "Aroma frutoso no demasiado fuerte. Sabor frutal equilibrado, un poco dulce y amargor final.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Braggot",
+    "brewery": "El Growler",
+    "style": "Braggot",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Cobre",
+      "turbidity": "Transparente",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Miel", "Ahumado"],
+      "flavor_notes": ["Miel"],
+      "bitterness": 3,
+      "free_notes": "Aroma ahumado con toque suave a miel. Sabor bastante dulce, con toque marcado a miel y amargor al final.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Piscolab",
+    "brewery": "El Growler",
+    "style": "Specialty Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 4,
+      "color": "Café",
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Vainilla"],
+      "flavor_notes": ["Vainilla"],
+      "free_notes": "Olor a coca cola suave. Emula un poco la piscola, cargada a la vainilla.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Castaña Brown Ale",
+    "brewery": "El Growler",
+    "style": "Brown Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8.5,
+      "color": "Negro",
+      "turbidity": "Transparente",
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Moderado",
+      "aroma_notes": ["Tostado"],
+      "flavor_notes": ["Tostado"],
+      "body": "Espeso",
+      "bitterness": 4,
+      "free_notes": "Cerveza con toque tostado fuerte y suave a castaña, amargor pesado pero equilibrado. Mucho cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Die Kiefern American Amber Ale",
+    "brewery": "Keyer",
+    "style": "American Amber Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Cobre",
+      "turbidity": "Opaco",
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Caramelo", "Frutal"],
+      "flavor_notes": ["Caramelo", "Tostado"],
+      "body": "Espeso",
+      "bitterness": 2,
+      "carbonation": "Baja",
+      "free_notes": "Aroma suave con toque acaramelado y frutal. Cerveza con sabor suave con toques suaves a caramelo y tostado, con buen equilibrio entre el amargor y dulzor. Cerveza espesa y con carbonatación baja.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Amber Ale",
+    "brewery": "Línea 1",
+    "style": "Amber Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6.5,
+      "color": "Cobre",
+      "turbidity": "Opaco",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Imperceptible",
+      "aroma_notes": ["Caramelo"],
+      "flavor_notes": ["Caramelo"],
+      "bitterness": 3,
+      "free_notes": "Casi sin aroma. Cerveza dulce, toque a caramelo, amargor al final.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "English IPA con Mango",
+    "brewery": "Benbrau",
+    "style": "English IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Dorado",
+      "turbidity": "Opaco",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "body": "Espeso",
+      "free_notes": "Aroma muy suave. IPA distinta, toque marcado a mango, cerveza dulce. Bastante cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Amber Ale",
+    "brewery": "Loa",
+    "style": "Amber Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "color": "Cobre",
+      "turbidity": "Transparente",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Ácido"],
+      "flavor_notes": ["Ácido"],
+      "free_notes": "Aroma suave no muy agradable. Cerveza de sabor ácido y con toques dulces.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Mingaloca West Coast IPA",
+    "brewery": "Loa",
+    "style": "West Coast IPA",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "color": "Dorado",
+      "turbidity": "Opaco",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Fuerte",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "bitterness": 4,
+      "carbonation": "Baja",
+      "free_notes": "Aroma frutal fuerte, muy lupulado, con toque parecido a mango. Cerveza sabrosa, frutal al principio y con un amargor marcado pero equilibrado al final.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Atrapanubes Pale Lager",
+    "brewery": "Loa",
+    "style": "Pale Lager",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 5,
+      "color": "Dorado",
+      "turbidity": "Semi-turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Liviano",
+      "carbonation": "Baja",
+      "free_notes": "Poco aroma muy suave. Cerveza no muy sabrosa, con toque más marcado a malta. Carbonatación medio baja.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Coolant IPL",
+    "brewery": "Wilkens",
+    "style": "India Pale Lager",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7.5,
+      "color": "Dorado",
+      "turbidity": "Transparente",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Moderado",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "bitterness": 3,
+      "free_notes": "Aroma frutal balanceado. Cerveza sabrosa, marcado sabor frutal, con amargor suave.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Roki American Amber Ale",
+    "brewery": "Reto",
+    "style": "American Amber Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 8,
+      "color": "Cobre",
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Caramelo", "Frutal"],
+      "flavor_notes": ["Caramelo"],
+      "body": "Medio",
+      "bitterness": 3,
+      "free_notes": "Aroma dulce con toques frutales. Cerveza sabrosa, buen equilibrio entre el amargor y dulzor, toque suave a caramelo. Buen cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Helles Lager",
+    "brewery": "Como Jurgen por su hausen",
+    "style": "Helles Lager",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 5,
+      "color": "Dorado",
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Imperceptible",
+      "aroma_notes": [],
+      "flavor_notes": ["Ácido", "Herbal"],
+      "free_notes": "Sin aroma. Cerveza un poco ácida, sabor tirado a trigo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "American Amber Ale",
+    "brewery": "Silvetch",
+    "style": "American Amber Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 7,
+      "color": "Cobre",
+      "turbidity": "Opaco",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Caramelo"],
+      "flavor_notes": ["Caramelo"],
+      "body": "Espeso",
+      "bitterness": 2,
+      "free_notes": "Sabor dulce con toque sutil de caramelo. Poco amargor, aunque harto cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Juana Rosa Scottish Export",
+    "brewery": "Rural",
+    "style": "Scottish Export",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 6,
+      "color": "Rojizo",
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Moderado",
+      "aroma_notes": ["Tostado", "Chocolate"],
+      "flavor_notes": ["Frutal", "Ácido"],
+      "body": "Medio",
+      "free_notes": "Aroma tostado, toque suave a chocolate. Sabor fresco con toque similar al kiwi o tuna, liviano. Un poco ácida al final.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Vaca Blanca Golden Ale",
+    "brewery": "Rural",
+    "style": "Golden Ale",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 4,
+      "color": "Dorado",
+      "turbidity": "Opaco",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "free_notes": "Poco aroma, no muy agradable. Sabor bastante neutro, no queda en la boca. Un poco pastosa.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Érase una vez Kolsch",
+    "brewery": "Greed",
+    "style": "Kölsch",
+    "origin": "Nacional",
+    "country": null,
+    "tasting": {
+      "score": 5,
+      "color": "Dorado",
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Imperceptible",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "carbonation": "Media",
+      "free_notes": "Sin aroma. Cerveza con sabor maltoso, no muy sabrosa.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Nacional"]
+  },
+  {
+    "name": "Sofie",
+    "brewery": "Goose Island",
+    "style": "Saison",
+    "origin": "Internacional",
+    "country": "EEUU",
+    "tasting": {
+      "score": 8,
+      "foam_amount": "Abundante",
+      "aroma_intensity": "Moderado",
+      "aroma_notes": ["Frutal", "Cítrico"],
+      "flavor_notes": ["Frutal", "Cítrico"],
+      "free_notes": "Bastante espuma. Sabor frutal, con toque marcado a naranja.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Oktoberfest",
+    "brewery": "Goose Island",
+    "style": "Märzen",
+    "origin": "Internacional",
+    "country": "EEUU",
+    "tasting": {
+      "score": 7,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "free_notes": "Lager buena, sabrosa y simple.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "312",
+    "brewery": "Goose Island",
+    "style": "Wheat Ale",
+    "origin": "Internacional",
+    "country": "EEUU",
+    "tasting": {
+      "score": 6,
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Cítrico"],
+      "flavor_notes": ["Cítrico"],
+      "body": "Liviano",
+      "free_notes": "De trigo. Suave y liviana. Dejo de limón.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "IPA",
+    "brewery": "Goose Island",
+    "style": "IPA",
+    "origin": "Internacional",
+    "country": "EEUU",
+    "tasting": {
+      "score": 6,
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "bitterness": 4,
+      "free_notes": "Poco aroma. Amarga, con poco sabor frutal.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Ruby",
+    "brewery": "Leffe",
+    "style": "Fruit Ale",
+    "origin": "Internacional",
+    "country": "Bélgica",
+    "tasting": {
+      "score": 4,
+      "aroma_intensity": "Fuerte",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "free_notes": "Fuerte sabor a fruta. Casi como jugo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Radieuse",
+    "brewery": "Leffe",
+    "style": "Belgian Ale",
+    "origin": "Internacional",
+    "country": "Bélgica",
+    "tasting": {
+      "score": 8,
+      "aroma_intensity": "Moderado",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "free_notes": "Rica y gustosa.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Blonde",
+    "brewery": "Leffe",
+    "style": "Belgian Blonde Ale",
+    "origin": "Internacional",
+    "country": "Bélgica",
+    "tasting": {
+      "score": 9,
+      "aroma_intensity": "Moderado",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "free_notes": "Excelente rubia. Gustosa y suave a la vez. Sabor distinto. Buenísima.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Brune",
+    "brewery": "Leffe",
+    "style": "Belgian Dark Ale",
+    "origin": "Internacional",
+    "country": "Bélgica",
+    "tasting": {
+      "score": 7,
+      "aroma_intensity": "Moderado",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "alcohol_presence": "Suave",
+      "bitterness": 3,
+      "free_notes": "Se siente toque a alcohol, amarga pero no tanto, fuerte.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "IPA",
+    "brewery": "Leffe",
+    "style": "IPA",
+    "origin": "Internacional",
+    "country": "Bélgica",
+    "tasting": {
+      "score": 5,
+      "color": "Dorado",
+      "turbidity": "Transparente",
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Espeso",
+      "bitterness": 4,
+      "free_notes": "Olor suave, amargo. Sabor amargo, no muy buen sabor. Harto cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Dunkel",
+    "brewery": "Franziskaner",
+    "style": "Dunkel",
+    "origin": "Internacional",
+    "country": "Alemania",
+    "tasting": {
+      "score": 6,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "free_notes": "Rica pero fome.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Optimator",
+    "brewery": "Spaten",
+    "style": "Doppelbock",
+    "origin": "Internacional",
+    "country": "Alemania",
+    "tasting": {
+      "score": 6,
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Miel"],
+      "flavor_notes": ["Miel"],
+      "free_notes": "Dulce y sabor a miel.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Hell Lager",
+    "brewery": "Spaten",
+    "style": "Helles Lager",
+    "origin": "Internacional",
+    "country": "Alemania",
+    "tasting": {
+      "score": 6,
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Herbal"],
+      "flavor_notes": ["Herbal"],
+      "body": "Liviano",
+      "free_notes": "Suave, con sabor un poco a trigo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Lager",
+    "brewery": "Hoegaarden",
+    "style": "Lager",
+    "origin": "Internacional",
+    "country": "Bélgica",
+    "tasting": {
+      "score": 6,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "free_notes": "Rica pero fome.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Rosée",
+    "brewery": "Hoegaarden",
+    "style": "Fruit Beer",
+    "origin": "Internacional",
+    "country": "Bélgica",
+    "tasting": {
+      "score": 3,
+      "aroma_intensity": "Fuerte",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "free_notes": "Pésima. Jugo de frambuesa.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Negra Modelo",
+    "brewery": "Modelo",
+    "style": "Dark Lager",
+    "origin": "Internacional",
+    "country": "México",
+    "tasting": {
+      "score": 6,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "alcohol_presence": "Suave",
+      "bitterness": 3,
+      "free_notes": "Rica, un tanto amarga, no tan gustosa. Se le siente toque de alcohol.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Especial",
+    "brewery": "Modelo",
+    "style": "Lager",
+    "origin": "Internacional",
+    "country": "México",
+    "tasting": {
+      "score": 5,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Liviano",
+      "free_notes": "Suave y liviana. Lager normal.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Duchessa con Farro",
+    "brewery": "Birrificio Italiano",
+    "style": "Saison",
+    "origin": "Internacional",
+    "country": "Italia",
+    "tasting": {
+      "score": 8,
+      "aroma_intensity": "Moderado",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "free_notes": "Muy buena. Mucho sabor.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Original",
+    "brewery": "Löwenbräu",
+    "style": "Lager",
+    "origin": "Internacional",
+    "country": "Alemania",
+    "tasting": {
+      "score": 7,
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Miel"],
+      "flavor_notes": ["Miel"],
+      "body": "Medio",
+      "free_notes": "Suave y con cuerpo, con toque a miel. Sabrosa.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Reale",
+    "brewery": "Birra del Borgo",
+    "style": "Extra Pale Ale",
+    "origin": "Internacional",
+    "country": "Italia",
+    "tasting": {
+      "score": 8,
+      "color": "Rojizo",
+      "aroma_intensity": "Moderado",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "free_notes": "Color rojizo. Muy rica y sabrosa.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "De Verboden Vrucht",
+    "brewery": "Hoegaarden",
+    "style": "Belgian Strong Ale",
+    "origin": "Internacional",
+    "country": "Bélgica",
+    "tasting": {
+      "score": 8,
+      "color": "Rojizo",
+      "aroma_intensity": "Moderado",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "free_notes": "Dulce, rica y color rojizo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "IPA",
+    "brewery": "Reeper B.",
+    "style": "IPA",
+    "origin": "Internacional",
+    "country": "Alemania",
+    "tasting": {
+      "score": 7,
+      "aroma_intensity": "Moderado",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "body": "Liviano",
+      "free_notes": "Liviana y sabrosa, frutal. Aroma frutal.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Moritz",
+    "brewery": "Moritz",
+    "style": "Lager",
+    "origin": "Internacional",
+    "country": "España",
+    "tasting": {
+      "score": 6,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "free_notes": "Rica lager.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Space Dust IPA",
+    "brewery": "Elysian",
+    "style": "IPA",
+    "origin": "Internacional",
+    "country": "EEUU",
+    "tasting": {
+      "score": 8,
+      "aroma_intensity": "Moderado",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "bitterness": 4,
+      "alcohol_presence": "Suave",
+      "free_notes": "Buen aroma. Amarga y sabrosa. Se le siente el alcohol. Rica.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Triple Natural Blond",
+    "brewery": "Ginette",
+    "style": "Belgian Triple",
+    "origin": "Internacional",
+    "country": "Bélgica",
+    "tasting": {
+      "score": 5,
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Herbal"],
+      "flavor_notes": ["Herbal"],
+      "body": "Espeso",
+      "free_notes": "De trigo, con harto cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Wolf Pup IPA",
+    "brewery": "Golden Road",
+    "style": "Session IPA",
+    "origin": "Internacional",
+    "country": "EEUU",
+    "tasting": {
+      "score": 8,
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal", "Cítrico"],
+      "flavor_notes": ["Frutal", "Cítrico", "Ácido"],
+      "bitterness": 3,
+      "free_notes": "Aroma suave a papaya. Amarga, con toques de limón. Un poco ácida.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Kilt Lifter Amber Ale",
+    "brewery": "Pike Brewing",
+    "style": "Amber Ale",
+    "origin": "Internacional",
+    "country": "Escocia",
+    "tasting": {
+      "score": 6,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Medio",
+      "free_notes": "Sabrosa, con cuerpo. Más fuerte.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Toasted Lager",
+    "brewery": "Blue Point",
+    "style": "Toasted Lager",
+    "origin": "Internacional",
+    "country": "EEUU",
+    "tasting": {
+      "score": 7,
+      "color": "Rojizo",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Tostado"],
+      "flavor_notes": ["Tostado"],
+      "bitterness": 3,
+      "free_notes": "Color colorado, sabrosa. Toque amargo al final.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Amber Lager",
+    "brewery": "Kilómetro 24.7",
+    "style": "Amber Lager",
+    "origin": "Internacional",
+    "country": "Argentina",
+    "tasting": {
+      "score": 6,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "free_notes": "No muy gustosa. Dulce.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "IPA",
+    "brewery": "Kilómetro 24.7",
+    "style": "IPA",
+    "origin": "Internacional",
+    "country": "Argentina",
+    "tasting": {
+      "score": 6,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Liviano",
+      "free_notes": "Muy poco aroma. Con sabor, pero suave. Un poco fome.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Bohemian Pilsener",
+    "brewery": "Kilómetro 24.7",
+    "style": "Pilsner",
+    "origin": "Internacional",
+    "country": "Argentina",
+    "tasting": {
+      "score": 7,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Liviano",
+      "free_notes": "Lager sabrosa. Liviana, refrescante.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Longboard Island Lager",
+    "brewery": "Kona Brewing",
+    "style": "Lager",
+    "origin": "Internacional",
+    "country": "EEUU",
+    "tasting": {
+      "score": 4,
+      "aroma_intensity": "Imperceptible",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "free_notes": "Muy fome. Ni un brillo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Michelob Ultra",
+    "brewery": "Anheuser-Busch",
+    "style": "Light Lager",
+    "origin": "Internacional",
+    "country": "EEUU",
+    "tasting": {
+      "score": 3,
+      "aroma_intensity": "Imperceptible",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Liviano",
+      "free_notes": "Cerveza de arroz. Desabrida, sin sabor. Extremadamente fome.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Beck's",
+    "brewery": "Beck's",
+    "style": "Lager",
+    "origin": "Internacional",
+    "country": "Alemania",
+    "tasting": {
+      "score": 6,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "free_notes": "Lager suave y sabrosa. Un toque dulce.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Sculpin IPA",
+    "brewery": "Ballast Point",
+    "style": "IPA",
+    "origin": "Internacional",
+    "country": "EEUU",
+    "tasting": {
+      "score": 7,
+      "color": "Dorado",
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal", "Ácido"],
+      "flavor_notes": ["Frutal"],
+      "body": "Espeso",
+      "bitterness": 4,
+      "free_notes": "Color dorado oscuro turbio. Bastante amarga, sabrosa, con harto cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "White IPA",
+    "brewery": "Sharkinator",
+    "style": "White IPA",
+    "origin": "Internacional",
+    "country": "EEUU",
+    "tasting": {
+      "score": 5,
+      "color": "Dorado",
+      "turbidity": "Turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Ácido"],
+      "flavor_notes": [],
+      "body": "Liviano",
+      "free_notes": "Aroma suave, un poco ácido. Poco sabor, un tanto desabrida.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "IPA",
+    "brewery": "Birra del Borgo",
+    "style": "IPA",
+    "origin": "Internacional",
+    "country": "Italia",
+    "tasting": {
+      "score": 6,
+      "color": "Caramelo",
+      "turbidity": "Turbio",
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "bitterness": 4,
+      "free_notes": "Aroma dulce y suave. Amarga, no muy sabrosa, pocos toques frutales.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Inedit",
+    "brewery": "Damm",
+    "style": "Wheat Beer",
+    "origin": "Internacional",
+    "country": "España",
+    "tasting": {
+      "score": 6,
+      "color": "Dorado",
+      "turbidity": "Turbio",
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "body": "Liviano",
+      "free_notes": "Color amarillo claro, turbio. Sabor suave, liviano, un poco desabrida.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Dunkel",
+    "brewery": "Erdinger",
+    "style": "Dunkel",
+    "origin": "Internacional",
+    "country": "Alemania",
+    "tasting": {
+      "score": 4,
+      "aroma_intensity": "Suave",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "free_notes": "Olor raro, no agradable. No mucho sabor, desabrida.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Argentum Hopped Amber IPA",
+    "brewery": "Delirium",
+    "style": "Amber IPA",
+    "origin": "Internacional",
+    "country": "Bélgica",
+    "tasting": {
+      "score": 6,
+      "color": "Caramelo",
+      "turbidity": "Opaco",
+      "foam_amount": "Abundante",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Ácido"],
+      "flavor_notes": ["Ácido"],
+      "alcohol_presence": "Suave",
+      "bitterness": 4,
+      "free_notes": "Poco aroma. Sabor amargo, con toque marcado de ácido y alcohol.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Nocturnum",
+    "brewery": "Delirium",
+    "style": "Dark Ale",
+    "origin": "Internacional",
+    "country": "Bélgica",
+    "tasting": {
+      "score": 6,
+      "color": "Cobre",
+      "turbidity": "Opaco",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Fuerte",
+      "aroma_notes": [],
+      "flavor_notes": [],
+      "alcohol_presence": "Marcado",
+      "free_notes": "Aroma fuerte a alcohol. Marcado sabor a alcohol, dulce.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "IPA",
+    "brewery": "Cerdos Voladores",
+    "style": "IPA",
+    "origin": "Internacional",
+    "country": "España",
+    "tasting": {
+      "score": 8,
+      "color": "Caramelo",
+      "turbidity": "Turbio",
+      "foam_amount": "Moderada",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "body": "Medio",
+      "bitterness": 3,
+      "free_notes": "Buen sabor, con toque frutal suave. Amargor equilibrado.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Hazy Hoppy Hippo",
+    "brewery": "Paranoia",
+    "style": "Hazy IPA",
+    "origin": "Internacional",
+    "country": "Bélgica",
+    "tasting": {
+      "score": 6,
+      "color": "Dorado",
+      "turbidity": "Semi-turbio",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "free_notes": "Aroma muy suave, poco frutal. Sabor no muy frutoso, con el toque clásico belga.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Session Ale",
+    "brewery": "Founders",
+    "style": "Session Ale",
+    "origin": "Internacional",
+    "country": "EEUU",
+    "tasting": {
+      "score": 7,
+      "color": "Dorado",
+      "foam_amount": "Abundante",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Frutal"],
+      "flavor_notes": ["Frutal"],
+      "body": "Medio",
+      "bitterness": 3,
+      "free_notes": "Aroma frutal más bien suave. Cerveza de sabor amargo, con toques frutales poco invasivos. Poco hostigante, buen cuerpo.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "La Moche Loche Pumpkin Ale",
+    "brewery": "Candelaria",
+    "style": "Pumpkin Ale",
+    "origin": "Internacional",
+    "country": "Chile",
+    "tasting": {
+      "score": 7,
+      "color": "Dorado",
+      "turbidity": "Opaco",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Moderado",
+      "aroma_notes": ["Frutal", "Especiado"],
+      "flavor_notes": ["Frutal", "Especiado"],
+      "free_notes": "Aroma frutoso con toque suave a zapallo dulce. Cerveza con sabor a zapallo y frutal muy suave, con un dejo picante a ají después de tragar.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  },
+  {
+    "name": "Wirbier Trigo y Naranja",
+    "brewery": "Candelaria",
+    "style": "Wheat Beer",
+    "origin": "Internacional",
+    "country": "Chile",
+    "tasting": {
+      "score": 6,
+      "color": "Dorado",
+      "turbidity": "Opaco",
+      "foam_amount": "Escasa",
+      "aroma_intensity": "Suave",
+      "aroma_notes": ["Cítrico", "Herbal"],
+      "flavor_notes": ["Cítrico", "Herbal"],
+      "free_notes": "Aroma suave a trigo. Sabor suave a trigo en la boca, con toque a naranja muy suave después de tragar.",
+      "tasting_date": "2024-01-01"
+    },
+    "categories": ["Internacional"]
+  }
+]

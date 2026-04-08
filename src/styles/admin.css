@@ -1,0 +1,211 @@
+.admin-dashboard {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+}
+
+.admin-dashboard__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-lg);
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.admin-dashboard__header h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.admin-dashboard__header p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-top: 2px;
+}
+
+/* Table wrapper with horizontal scroll on mobile */
+.beer-table-wrapper {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.beer-table {
+  width: 100%;
+  min-width: 420px;
+  border-collapse: collapse;
+}
+
+.beer-table th {
+  text-align: left;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--gold-primary);
+  background: var(--gold-pale);
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 1px solid rgba(200, 160, 48, 0.2);
+  white-space: nowrap;
+}
+
+.beer-table td {
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 1px solid var(--border-light);
+  font-size: 0.88rem;
+  vertical-align: middle;
+}
+
+.beer-table tr:last-child td {
+  border-bottom: none;
+}
+
+.beer-table tr:hover td {
+  background: var(--green-pale);
+}
+
+.beer-table__name {
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.beer-table__brewery {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+}
+
+.beer-table__score {
+  font-weight: 700;
+  color: var(--gold-primary);
+  font-size: 1rem;
+}
+
+.beer-table__actions {
+  display: flex;
+  gap: var(--space-xs);
+  white-space: nowrap;
+}
+
+.action-link {
+  font-size: 0.78rem;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-input);
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all var(--transition);
+  display: inline-block;
+}
+
+.action-link:hover {
+  border-color: var(--green-primary);
+  color: var(--green-primary);
+}
+
+.action-link--primary {
+  background: var(--gold-primary);
+  border-color: var(--gold-primary);
+  color: #16263a;
+  font-weight: 600;
+}
+
+.action-link--primary:hover {
+  background: var(--gold-light);
+  border-color: var(--gold-light);
+  color: #16263a;
+}
+
+.action-link--danger {
+  background: none;
+  border-color: rgba(220, 60, 60, 0.4);
+  color: #f08080;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.action-link--danger:hover:not(:disabled) {
+  background: rgba(220, 60, 60, 0.12);
+  border-color: rgba(220, 60, 60, 0.6);
+}
+
+.action-link--danger:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.admin-search {
+  border: 1px solid var(--border-input);
+  border-radius: var(--radius-input);
+  padding: 8px var(--space-md);
+  background: var(--bg-page);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  outline: none;
+  width: 200px;
+  transition: border-color var(--transition);
+}
+
+.admin-search:focus {
+  border-color: var(--green-primary);
+}
+
+/* Admin page form wrapper */
+.admin-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+}
+
+.admin-page__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-lg);
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.admin-page__header h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.admin-page__header p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-top: 2px;
+}
+
+@media (max-width: 600px) {
+  .admin-dashboard {
+    padding: var(--space-md) var(--space-sm);
+  }
+
+  .admin-page {
+    padding: var(--space-md) var(--space-sm);
+  }
+
+  .admin-search {
+    width: 100%;
+  }
+
+  .admin-dashboard__header > div:last-child {
+    width: 100%;
+  }
+
+  /* Hide date column on small screens */
+  .beer-table th:nth-child(4),
+  .beer-table td:nth-child(4) {
+    display: none;
+  }
+
+  .beer-table th,
+  .beer-table td {
+    padding: var(--space-xs) var(--space-sm);
+  }
+}

@@ -1,0 +1,55 @@
+:root {
+  /* Backgrounds */
+  --bg-page:        #16263a;
+  --bg-card:        #1c2e42;
+  --bg-header:      #1c2e42;
+  --bg-admin:       #1c2e42;
+
+  /* Blue — structural: borders, hover backgrounds, focus, links */
+  --green-primary:  #2a5a8a;
+  --green-dark:     #1e4570;
+  --green-light:    #6890b8;
+  --green-pale:     #1e3550;
+
+  /* Gold / Amber — action: buttons, active states, titles, badges */
+  --gold-primary:   #c8a030;
+  --gold-light:     #d8b448;
+  --gold-pale:      rgba(200, 160, 48, 0.13);
+  --gold-dark:      #a07820;
+
+  /* Text */
+  --text-primary:   #d8eaf8;
+  --text-secondary: #a0b8d0;
+  --text-muted:     #6890b8;
+
+  /* Borders */
+  --border-light:   rgba(42, 90, 138, 0.4);
+  --border-card:    rgba(42, 90, 138, 0.3);
+  --border-input:   rgba(104, 144, 184, 0.4);
+
+  /* Shadows */
+  --shadow-card:    0 2px 16px rgba(0, 0, 0, 0.4);
+  --shadow-hover:   0 6px 28px rgba(0, 0, 0, 0.6);
+  --shadow-header:  0 2px 8px rgba(0, 0, 0, 0.3);
+
+  /* Typography */
+  --font-sans:      'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+
+  /* Spacing */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  40px;
+  --space-2xl: 64px;
+
+  /* Border radius */
+  --radius-sm:    6px;
+  --radius-card:  12px;
+  --radius-badge: 20px;
+  --radius-input: 8px;
+  --radius-btn:   8px;
+
+  /* Transitions */
+  --transition: 0.2s ease;
+}

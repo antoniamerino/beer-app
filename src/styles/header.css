@@ -1,0 +1,99 @@
+.header {
+  background: var(--bg-header);
+  border-bottom: 1px solid var(--border-light);
+  box-shadow: var(--shadow-header);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.header__logo-text {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.header__nav a {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 6px var(--space-sm);
+  border-radius: var(--radius-sm);
+  transition: color var(--transition), background var(--transition);
+  white-space: nowrap;
+}
+
+.header__nav a:hover {
+  color: var(--text-primary);
+  background: var(--green-pale);
+}
+
+.header__admin-btn {
+  background: var(--green-primary) !important;
+  color: var(--text-primary) !important;
+  padding: 6px var(--space-md) !important;
+  border-radius: var(--radius-btn) !important;
+  font-weight: 600 !important;
+}
+
+.header__admin-btn:hover {
+  background: var(--green-dark) !important;
+  color: var(--text-primary) !important;
+}
+
+.header__logout-btn {
+  background: none;
+  border: 1px solid var(--border-light);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 6px var(--space-sm);
+  border-radius: var(--radius-btn);
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+
+.header__logout-btn:hover {
+  border-color: var(--green-light);
+  color: var(--text-secondary);
+}
+
+@media (max-width: 400px) {
+  .header__logo-text {
+    font-size: 0.95rem;
+  }
+  .header__nav a,
+  .header__logout-btn {
+    font-size: 0.78rem;
+    padding: 5px 8px;
+  }
+  .header__admin-btn {
+    padding: 5px 10px !important;
+  }
+}
