@@ -1,0 +1,219 @@
+.ranking-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-md);
+}
+
+/* ── Header ──────────────────────────────────────────────── */
+.ranking-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.ranking-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 4px;
+}
+
+.ranking-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ── Filters ─────────────────────────────────────────────── */
+.ranking-filters {
+  display: flex;
+  gap: 4px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-btn);
+  padding: 3px;
+}
+
+.ranking-filter {
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: transparent;
+  color: var(--text-muted);
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+
+.ranking-filter:hover {
+  color: var(--text-secondary);
+}
+
+.ranking-filter--active {
+  background: var(--gold-primary);
+  color: #1a1008;
+  font-weight: 700;
+}
+
+/* ── List ────────────────────────────────────────────────── */
+.ranking-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+/* ── Row ─────────────────────────────────────────────────── */
+.ranking-row {
+  display: grid;
+  grid-template-columns: 48px 1fr auto;
+  align-items: center;
+  gap: var(--space-md);
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-card);
+  padding: var(--space-md);
+  transition: border-color var(--transition);
+}
+
+.ranking-row:hover {
+  border-color: var(--gold-primary);
+}
+
+.ranking-row--podium {
+  border-color: var(--border-input);
+}
+
+.ranking-row--podium:first-child {
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 0 1px var(--gold-primary) inset;
+}
+
+/* ── Position ────────────────────────────────────────────── */
+.ranking-pos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ranking-medal {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.ranking-num {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+/* ── Info ────────────────────────────────────────────────── */
+.ranking-brewery {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.ranking-origin {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ranking-beers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.ranking-beer-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--bg-page);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-badge);
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all var(--transition);
+}
+
+.ranking-beer-chip:hover {
+  border-color: var(--gold-primary);
+  color: var(--text-primary);
+}
+
+.ranking-beer-score {
+  font-weight: 700;
+  color: var(--gold-primary);
+}
+
+/* ── Score ───────────────────────────────────────────────── */
+.ranking-score-col {
+  text-align: right;
+  min-width: 80px;
+}
+
+.ranking-avg {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  line-height: 1;
+}
+
+.ranking-count {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin: 2px 0 var(--space-sm);
+}
+
+.ranking-bar-wrap {
+  height: 4px;
+  background: var(--border-light);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.ranking-bar {
+  height: 100%;
+  background: var(--gold-primary);
+  border-radius: 2px;
+  transition: width 0.5s ease;
+}
+
+/* ── Empty ───────────────────────────────────────────────── */
+.ranking-empty {
+  text-align: center;
+  padding: var(--space-2xl) 0;
+  color: var(--text-muted);
+}
+
+/* ── Mobile ──────────────────────────────────────────────── */
+@media (max-width: 520px) {
+  .ranking-page { padding: var(--space-md) var(--space-sm); }
+
+  .ranking-header { flex-direction: column; gap: var(--space-sm); }
+
+  .ranking-row {
+    grid-template-columns: 36px 1fr auto;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+  }
+
+  .ranking-medal { font-size: 1.4rem; }
+  .ranking-num   { font-size: 0.95rem; }
+  .ranking-brewery { font-size: 0.95rem; }
+  .ranking-avg   { font-size: 1.5rem; }
+
+  .ranking-score-col { min-width: 60px; }
+}

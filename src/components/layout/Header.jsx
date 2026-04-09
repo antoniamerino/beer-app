@@ -14,6 +14,7 @@ export default function Header() {
 
         <nav className="header__nav">
           <NavLink to="/">Cervezas</NavLink>
+          <NavLink to="/ranking">Ranking</NavLink>
           <NavLink to="/quiz">Test</NavLink>
           {user ? (
             <>

@@ -1,27 +1,9 @@
-import { useState, useCallback } from 'react'
 import { useTastingOptions } from '../../hooks/useTastingOptions'
 import SingleSelect from './SingleSelect'
 import PhotoUpload from './PhotoUpload'
-import BarcodeScanner from './BarcodeScanner'
-import { searchByBarcode } from '../../hooks/useBarcodeSearch'
 
 export default function BeerForm({ data, onChange }) {
   const { values, beerStyleGroups, loading } = useTastingOptions()
-  const [scanState, setScanState] = useState('idle') // idle | scanning | searching | found | notFound
-  const [showScanner, setShowScanner] = useState(false)
-
-  const handleDetected = useCallback(async (code) => {
-    setShowScanner(false)
-    setScanState('searching')
-    const result = await searchByBarcode(code)
-    if (result) {
-      onChange({ ...data, ...result })
-      setScanState('found')
-    } else {
-      setScanState('notFound')
-    }
-    setTimeout(() => setScanState('idle'), 5000)
-  }, [data, onChange])
 
   const originOptions = values('origins')
   const styleGroups   = beerStyleGroups()
@@ -33,32 +15,6 @@ export default function BeerForm({ data, onChange }) {
   return (
     <div className="form-section">
       <h3>Información de la cerveza</h3>
-
-      {showScanner && (
-        <BarcodeScanner
-          onDetected={handleDetected}
-          onClose={() => setShowScanner(false)}
-        />
-      )}
-
-      <button
-        type="button"
-        className="btn-secondary scan-btn"
-        onClick={() => { setScanState('idle'); setShowScanner(true) }}
-      >
-        📷 Escanear código de barras
-      </button>
-
-      {scanState === 'searching' && (
-        <div className="scan-banner scan-banner--searching">Buscando cerveza…</div>
-      )}
-      {scanState === 'found' && (
-        <div className="scan-banner scan-banner--found">✓ Datos encontrados. Revisá y completá lo que falte.</div>
-      )}
-      {scanState === 'notFound' && (
-        <div className="scan-banner scan-banner--notfound">No encontramos esta cerveza en la base de datos. Completá los datos manualmente.</div>
-      )}
-
       <div className="form-grid">
         <div className="form-group">
           <label htmlFor="name">Nombre *</label>
