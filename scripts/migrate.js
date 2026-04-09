@@ -111,7 +111,7 @@ for (const [i, entry] of beers.entries()) {
           carbonation: t.carbonation || null,
           alcohol_presence: t.alcohol_presence || null,
           score: t.score ?? null,
-          comment: t.comment || t.free_notes || null,
+          free_notes: t.free_notes || t.comment || null,
         })
 
       if (tastingErr) throw new Error(`tastings insert: ${tastingErr.message}`)
