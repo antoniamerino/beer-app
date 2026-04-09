@@ -20,7 +20,7 @@ const DEFAULT_FILTERS = {
   carbonations: [],
   alcoholPresences: [],
   minScore: '',
-  sortBy: 'date_desc',
+  sortBy: 'score_desc',
 }
 
 function applyFilters(beers, filters) {
