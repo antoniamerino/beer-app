@@ -38,6 +38,9 @@ export default function RankingPage() {
       map[beer.brewery].beers.push(beer)
     })
 
+    const origins = [...new Set(beers.map(b => b.origin))]
+    console.log('[Ranking] Valores de origin encontrados:', origins)
+
     return Object.values(map)
       .map(g => ({
         ...g,
@@ -46,8 +49,8 @@ export default function RankingPage() {
         best:  [...g.beers].sort((a, b) => b.latestTasting.score - a.latestTasting.score).slice(0, 3),
       }))
       .filter(g => {
-        if (filter === 'ar')   return g.origin === 'Argentina'
-        if (filter === 'intl') return g.origin === 'Internacional'
+        if (filter === 'ar')   return g.origin.toLowerCase().includes('argentin')
+        if (filter === 'intl') return g.origin.toLowerCase().includes('internac') || (g.origin !== '' && !g.origin.toLowerCase().includes('argentin'))
         return true
       })
       .sort((a, b) => b.avg - a.avg || b.count - a.count)
