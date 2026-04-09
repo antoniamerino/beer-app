@@ -10,7 +10,7 @@ export default function BeerCard({ beer }) {
       <img
         src={beer.photo_url || '/default.png'}
         alt={beer.name}
-        className="beer-card__photo"
+        className={`beer-card__photo ${!beer.photo_url ? 'beer-card__photo--default' : ''}`}
         loading="lazy"
       />
 

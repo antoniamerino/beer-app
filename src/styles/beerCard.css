@@ -23,6 +23,12 @@
   background: var(--gold-pale);
 }
 
+.beer-card__photo--default {
+  object-fit: contain;
+  padding: 24px;
+  background: var(--green-pale);
+}
+
 .beer-card__photo-placeholder {
   aspect-ratio: 4 / 5;
   width: 100%;
