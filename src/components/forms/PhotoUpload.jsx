@@ -1,24 +1,32 @@
 import { useRef, useState } from 'react'
-import CropModal from './CropModal'
+import { supabase } from '../../lib/supabase'
 
 export default function PhotoUpload({ currentUrl, onUpload }) {
   const galleryRef = useRef()
   const [preview, setPreview] = useState(currentUrl || null)
+  const [uploading, setUploading] = useState(false)
   const [uploadError, setUploadError] = useState('')
-  const [cropFile, setCropFile] = useState(null)
 
-  function handleFileChange(e) {
+  async function handleFileChange(e) {
     const file = e.target.files?.[0]
     if (!file) return
-    e.target.value = '' // reset so same file can be re-selected
+    e.target.value = ''
     setUploadError('')
-    setCropFile(file)
-  }
+    setUploading(true)
 
-  function handleCaptured(publicUrl, localPreview) {
+    const ext = file.name.split('.').pop()
+    const path = `beers/${Date.now()}.${ext}`
+    const { error } = await supabase.storage.from('beer-photos').upload(path, file, { upsert: true })
+    if (error) {
+      setUploadError('Error al subir la foto.')
+      setUploading(false)
+      return
+    }
+    const { data } = supabase.storage.from('beer-photos').getPublicUrl(path)
+    const localPreview = URL.createObjectURL(file)
     setPreview(localPreview)
-    setCropFile(null)
-    onUpload(publicUrl)
+    setUploading(false)
+    onUpload(data.publicUrl)
   }
 
   function handleRemove() {
@@ -36,14 +44,6 @@ export default function PhotoUpload({ currentUrl, onUpload }) {
         className="photo-upload__input"
         onChange={handleFileChange}
       />
-
-      {cropFile && (
-        <CropModal
-          file={cropFile}
-          onCapture={handleCaptured}
-          onClose={() => setCropFile(null)}
-        />
-      )}
 
       {uploadError && (
         <div className="photo-upload__error">
@@ -69,6 +69,7 @@ export default function PhotoUpload({ currentUrl, onUpload }) {
               type="button"
               className="photo-upload__btn"
               onClick={() => galleryRef.current.click()}
+              disabled={uploading}
             >
               🖼 Cambiar foto
             </button>
@@ -76,6 +77,7 @@ export default function PhotoUpload({ currentUrl, onUpload }) {
               type="button"
               className="photo-upload__btn photo-upload__btn--danger"
               onClick={handleRemove}
+              disabled={uploading}
             >
               🗑 Eliminar
             </button>
@@ -87,9 +89,10 @@ export default function PhotoUpload({ currentUrl, onUpload }) {
             type="button"
             className="photo-upload__trigger-btn"
             onClick={() => galleryRef.current.click()}
+            disabled={uploading}
           >
             <span className="photo-upload__trigger-icon">🖼</span>
-            <span>Elegir foto</span>
+            <span>{uploading ? 'Subiendo…' : 'Elegir foto'}</span>
           </button>
         </div>
       )}
