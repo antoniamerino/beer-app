@@ -93,7 +93,7 @@ export default function HomePage() {
   const [filters, setFilters] = useState(DEFAULT_FILTERS)
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
-  const [mobileCols, setMobileCols] = useState(2)
+  const [mobileCols, setMobileCols] = useState(3)
 
   // Derive unique styles from loaded beers
   const availableStyles = useMemo(() => {
