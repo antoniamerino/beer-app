@@ -43,8 +43,9 @@
   color: var(--text-secondary);
   font-size: 0.85rem;
   font-weight: 500;
-  padding: 6px var(--space-sm);
+  padding: 6px var(--space-md);
   border-radius: var(--radius-sm);
+  background: var(--bg-card);
   transition: color var(--transition), background var(--transition);
   white-space: nowrap;
 }
@@ -55,15 +56,15 @@
 }
 
 .header__admin-btn {
-  background: var(--green-primary) !important;
-  color: var(--text-primary) !important;
+  background: var(--bg-card) !important;
+  color: var(--text-secondary) !important;
   padding: 6px var(--space-md) !important;
   border-radius: var(--radius-btn) !important;
   font-weight: 600 !important;
 }
 
 .header__admin-btn:hover {
-  background: var(--green-dark) !important;
+  background: var(--green-pale) !important;
   color: var(--text-primary) !important;
 }
 
