@@ -33,7 +33,6 @@ export default function LoginPage() {
     <div className="login-page">
       <div className="login-card">
         <div className="login-card__logo">
-          <div className="login-card__logo-icon">🍺</div>
           <h1>Cervezas Diego</h1>
           <p>Acceso al panel de administración</p>
         </div>
