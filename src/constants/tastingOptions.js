@@ -11,7 +11,7 @@ export const FOAM_AMOUNT_OPTIONS = [
 ]
 
 export const FOAM_PERSISTENCE_OPTIONS = [
-  'Poco persistente', 'Persistente',
+  'Poco persistente', 'Media', 'Persistente',
 ]
 
 export const AROMA_INTENSITY_OPTIONS = [

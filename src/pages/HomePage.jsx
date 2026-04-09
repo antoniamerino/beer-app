@@ -5,7 +5,7 @@ import BeerGrid from '../components/beer/BeerGrid'
 import '../styles/filterSidebar.css'
 import '../styles/beerGrid.css'
 
-const HERO_IMG = '/martin-pescador.jpeg'
+const HERO_IMG = '/beers.jpeg'
 
 const DEFAULT_FILTERS = {
   origins: [],         // [] = all
@@ -97,7 +97,6 @@ export default function HomePage() {
       <div className="home-hero">
         <img src={HERO_IMG} alt="Martín Pescador" className="home-hero__img" />
         <div className="home-hero__overlay">
-          <h1 className="home-hero__title">Cervezas Diego</h1>
           <p className="home-hero__subtitle">Registro personal de catas de cerveza artesanal</p>
         </div>
       </div>

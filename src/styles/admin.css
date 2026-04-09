@@ -110,14 +110,14 @@
 .action-link--primary {
   background: var(--gold-primary);
   border-color: var(--gold-primary);
-  color: #16263a;
+  color: #1a1008;
   font-weight: 600;
 }
 
 .action-link--primary:hover {
   background: var(--gold-light);
   border-color: var(--gold-light);
-  color: #16263a;
+  color: #1a1008;
 }
 
 .action-link--danger {

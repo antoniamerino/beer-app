@@ -1,36 +1,36 @@
 :root {
   /* Backgrounds */
-  --bg-page:        #16263a;
-  --bg-card:        #1c2e42;
-  --bg-header:      #1c2e42;
-  --bg-admin:       #1c2e42;
+  --bg-page:        #1a1008;
+  --bg-card:        #2a1c0e;
+  --bg-header:      #221508;
+  --bg-admin:       #2a1c0e;
 
-  /* Blue — structural: borders, hover backgrounds, focus, links */
-  --green-primary:  #2a5a8a;
-  --green-dark:     #1e4570;
-  --green-light:    #6890b8;
-  --green-pale:     #1e3550;
+  /* Amber / structural (replaces blue) */
+  --green-primary:  #c8780a;
+  --green-dark:     #a06008;
+  --green-light:    #e8a030;
+  --green-pale:     #3a2010;
 
-  /* Gold / Amber — action: buttons, active states, titles, badges */
-  --gold-primary:   #c8a030;
-  --gold-light:     #d8b448;
-  --gold-pale:      rgba(200, 160, 48, 0.13);
-  --gold-dark:      #a07820;
+  /* Gold / accent (scores + active states) */
+  --gold-primary:   #e8a030;
+  --gold-light:     #f5d898;
+  --gold-pale:      rgba(200, 120, 10, 0.15);
+  --gold-dark:      #c8780a;
 
   /* Text */
-  --text-primary:   #d8eaf8;
-  --text-secondary: #a0b8d0;
-  --text-muted:     #6890b8;
+  --text-primary:   #f0d8a8;
+  --text-secondary: #a07840;
+  --text-muted:     #6a4a28;
 
   /* Borders */
-  --border-light:   rgba(42, 90, 138, 0.4);
-  --border-card:    rgba(42, 90, 138, 0.3);
-  --border-input:   rgba(104, 144, 184, 0.4);
+  --border-light:   #3a2a18;
+  --border-card:    #3a2010;
+  --border-input:   #6a3a18;
 
   /* Shadows */
-  --shadow-card:    0 2px 16px rgba(0, 0, 0, 0.4);
-  --shadow-hover:   0 6px 28px rgba(0, 0, 0, 0.6);
-  --shadow-header:  0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-card:    0 2px 16px rgba(0, 0, 0, 0.5);
+  --shadow-hover:   0 6px 28px rgba(0, 0, 0, 0.7);
+  --shadow-header:  0 2px 8px rgba(0, 0, 0, 0.4);
 
   /* Typography */
   --font-sans:      'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
