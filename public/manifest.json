@@ -1,0 +1,25 @@
+{
+  "name": "Cervezas Diego",
+  "short_name": "Cervezas",
+  "description": "Registro personal de catas de cerveza artesanal",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#1a1008",
+  "theme_color": "#c8780a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
