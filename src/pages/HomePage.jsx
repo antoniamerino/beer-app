@@ -8,6 +8,20 @@ import '../styles/beerGrid.css'
 
 const HERO_IMG = '/beers.jpeg'
 
+function ColsIcon({ n }) {
+  const gap = 2
+  const total = 28
+  const w = (total - gap * (n - 1)) / n
+  const rects = Array.from({ length: n }, (_, i) => (
+    <rect key={i} x={i * (w + gap)} y={0} width={w} height={10} rx={1} />
+  ))
+  return (
+    <svg width={total} height={10} viewBox={`0 0 ${total} 10`} fill="currentColor">
+      {rects}
+    </svg>
+  )
+}
+
 const DEFAULT_FILTERS = {
   origins: [],         // [] = all
   styles: [],          // [] = all
@@ -79,6 +93,7 @@ export default function HomePage() {
   const [filters, setFilters] = useState(DEFAULT_FILTERS)
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
+  const [mobileCols, setMobileCols] = useState(2)
 
   // Derive unique styles from loaded beers
   const availableStyles = useMemo(() => {
@@ -147,6 +162,20 @@ export default function HomePage() {
               </select>
             </div>
 
+            <div className="home-bar__cols">
+              {[2, 3, 4].map(n => (
+                <button
+                  key={n}
+                  type="button"
+                  className={`cols-btn${mobileCols === n ? ' cols-btn--active' : ''}`}
+                  onClick={() => setMobileCols(n)}
+                  title={`${n} columnas`}
+                >
+                  <ColsIcon n={n} />
+                </button>
+              ))}
+            </div>
+
             <span className="home-layout__count">
               {loading ? '' : `${filtered.length} cerveza${filtered.length !== 1 ? 's' : ''}`}
               {totalActive > 0 && !loading ? ` · ${totalActive} filtro${totalActive !== 1 ? 's' : ''} activo${totalActive !== 1 ? 's' : ''}` : ''}
@@ -170,7 +199,7 @@ export default function HomePage() {
             )}
           </div>
 
-          <BeerGrid beers={filtered} loading={loading} />
+          <BeerGrid beers={filtered} loading={loading} cols={mobileCols} />
         </div>
       </div>
     </>

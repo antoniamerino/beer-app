@@ -4,9 +4,8 @@
   gap: var(--space-lg);
 }
 
-@media (max-width: 480px) {
-  .beer-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-sm);
-  }
+@media (max-width: 820px) {
+  .beer-grid--cols-2 { grid-template-columns: repeat(2, 1fr); gap: var(--space-sm); }
+  .beer-grid--cols-3 { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .beer-grid--cols-4 { grid-template-columns: repeat(4, 1fr); gap: 4px; }
 }
