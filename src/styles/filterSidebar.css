@@ -33,6 +33,34 @@
   z-index: 1;
 }
 
+.filter-sidebar__header-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.filter-sidebar__close {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  line-height: 1;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0 4px;
+  transition: color var(--transition);
+}
+
+.filter-sidebar__close:hover {
+  color: var(--text-primary);
+}
+
+@media (max-width: 820px) {
+  .filter-sidebar__close {
+    display: block;
+  }
+}
+
 .filter-sidebar__header h3 {
   font-size: 0.8rem;
   font-weight: 700;

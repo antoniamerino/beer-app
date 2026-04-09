@@ -135,6 +135,7 @@ export default function HomePage() {
           onChange={setFilters}
           availableStyles={availableStyles}
           isOpen={sidebarOpen}
+          onClose={() => setSidebarOpen(false)}
         />
 
         <div className="home-layout__content">

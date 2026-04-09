@@ -151,7 +151,7 @@ function BitternessGroup({ selected, onChange }) {
   )
 }
 
-export default function FilterSidebar({ filters, onChange, availableStyles, isOpen }) {
+export default function FilterSidebar({ filters, onChange, availableStyles, isOpen, onClose }) {
   const totalActive = [
     filters.origins, filters.styles, filters.colors, filters.turbidities,
     filters.foamAmounts, filters.aromaIntensities, filters.bodies,
@@ -174,7 +174,14 @@ export default function FilterSidebar({ filters, onChange, availableStyles, isOp
   return (
     <div className={`filter-sidebar ${isOpen ? 'filter-sidebar--open' : ''}`}>
       <div className="filter-sidebar__header">
-        <h3>Filtros</h3>
+        <div className="filter-sidebar__header-left">
+          {onClose && (
+            <button type="button" className="filter-sidebar__close" onClick={onClose} title="Cerrar filtros">
+              ‹
+            </button>
+          )}
+          <h3>Filtros</h3>
+        </div>
         {totalActive > 0 && (
           <button className="filter-sidebar__reset" onClick={resetAll}>
             Limpiar todo ({totalActive})
