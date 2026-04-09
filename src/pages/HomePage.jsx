@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react'
 import { useBeers } from '../hooks/useBeers'
 import FilterSidebar from '../components/beer/FilterSidebar'
 import BeerGrid from '../components/beer/BeerGrid'
+import { SORT_OPTIONS } from '../constants/tastingOptions'
 import '../styles/filterSidebar.css'
 import '../styles/beerGrid.css'
 
@@ -19,7 +20,7 @@ const DEFAULT_FILTERS = {
   carbonations: [],
   alcoholPresences: [],
   minScore: '',
-  sortBy: 'score_desc',
+  sortBy: 'date_desc',
 }
 
 function applyFilters(beers, filters) {
@@ -102,33 +103,47 @@ export default function HomePage() {
       </div>
 
       <div className="home-layout">
-      <FilterSidebar
-        filters={filters}
-        onChange={setFilters}
-        availableStyles={availableStyles}
-        isOpen={sidebarOpen}
-      />
+        <FilterSidebar
+          filters={filters}
+          onChange={setFilters}
+          availableStyles={availableStyles}
+          isOpen={sidebarOpen}
+        />
 
-      <div className="home-layout__content">
-        <div className="home-layout__bar">
-          <button
-            className="filter-mobile-btn"
-            onClick={() => setSidebarOpen(o => !o)}
-          >
-            Filtros
-            {totalActive > 0 && (
-              <span className="filter-mobile-btn__count">{totalActive}</span>
-            )}
-          </button>
-          <span className="home-layout__count">
-            {loading ? '' : `${filtered.length} cerveza${filtered.length !== 1 ? 's' : ''}`}
-            {totalActive > 0 && !loading ? ` · ${totalActive} filtro${totalActive !== 1 ? 's' : ''} activo${totalActive !== 1 ? 's' : ''}` : ''}
-          </span>
+        <div className="home-layout__content">
+          <div className="home-layout__bar">
+            <button
+              className={`filter-mobile-btn${sidebarOpen ? ' filter-mobile-btn--open' : ''}`}
+              onClick={() => setSidebarOpen(o => !o)}
+            >
+              Filtros
+              {totalActive > 0 && (
+                <span className="filter-mobile-btn__count">{totalActive}</span>
+              )}
+              <span className="filter-mobile-btn__arrow">›</span>
+            </button>
+
+            <div className="home-bar__sort">
+              <select
+                className="filter-sidebar__select"
+                value={filters.sortBy}
+                onChange={e => setFilters(f => ({ ...f, sortBy: e.target.value }))}
+              >
+                {SORT_OPTIONS.map(o => (
+                  <option key={o.value} value={o.value}>{o.label}</option>
+                ))}
+              </select>
+            </div>
+
+            <span className="home-layout__count">
+              {loading ? '' : `${filtered.length} cerveza${filtered.length !== 1 ? 's' : ''}`}
+              {totalActive > 0 && !loading ? ` · ${totalActive} filtro${totalActive !== 1 ? 's' : ''} activo${totalActive !== 1 ? 's' : ''}` : ''}
+            </span>
+          </div>
+
+          <BeerGrid beers={filtered} loading={loading} />
         </div>
-
-        <BeerGrid beers={filtered} loading={loading} />
       </div>
-    </div>
     </>
   )
 }

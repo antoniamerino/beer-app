@@ -16,6 +16,7 @@ export default function MultiSelect({ options, selected, onChange }) {
           type="button"
           className={`multi-select__chip ${selected.includes(opt) ? 'multi-select__chip--selected' : ''}`}
           onPointerDown={e => toggle(e, opt)}
+          onClick={e => { e.preventDefault(); e.stopPropagation() }}
           style={{ touchAction: 'manipulation', userSelect: 'none' }}
         >
           {opt}

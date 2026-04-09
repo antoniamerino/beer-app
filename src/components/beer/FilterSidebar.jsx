@@ -163,7 +163,7 @@ export default function FilterSidebar({ filters, onChange, availableStyles, isOp
       </div>
 
       <div className="filter-sidebar__top">
-        <div>
+        <div className="filter-sidebar__sort">
           <span className="filter-sidebar__top-label">Ordenar por</span>
           <select
             className="filter-sidebar__select"
