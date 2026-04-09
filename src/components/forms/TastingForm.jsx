@@ -12,8 +12,8 @@ import BitternessSlider from './BitternessSlider'
 export default function TastingForm({ data, onChange }) {
   const { values, loading } = useTastingOptions()
 
-  const colorOptions   = values('colors')
-  const aromaOptions   = values('aroma_notes')
+  const colorOptions   = [...values('colors')].sort((a, b) => a.localeCompare(b, 'es'))
+  const aromaOptions   = [...values('aroma_notes')].sort((a, b) => a.localeCompare(b, 'es'))
 
   function set(field, value) {
     onChange({ ...data, [field]: value })

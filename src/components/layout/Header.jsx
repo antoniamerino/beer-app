@@ -14,6 +14,7 @@ export default function Header() {
 
         <nav className="header__nav">
           <NavLink to="/">Cervezas</NavLink>
+          <NavLink to="/quiz">Test</NavLink>
           {user ? (
             <>
               <NavLink to="/admin" className="header__admin-btn">Admin</NavLink>

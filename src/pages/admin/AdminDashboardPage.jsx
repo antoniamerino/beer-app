@@ -78,6 +78,9 @@ export default function AdminDashboardPage() {
             value={search}
             onChange={e => setSearch(e.target.value)}
           />
+          <Link to="/admin/stats" className="action-link" style={{ whiteSpace: 'nowrap' }}>
+            Estadísticas
+          </Link>
           <Link to="/admin/config" className="action-link" style={{ whiteSpace: 'nowrap' }}>
             ⚙ Opciones
           </Link>
