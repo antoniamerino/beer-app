@@ -78,6 +78,7 @@ export default function HomePage() {
   const { beers, loading } = useBeers()
   const [filters, setFilters] = useState(DEFAULT_FILTERS)
   const [sidebarOpen, setSidebarOpen] = useState(false)
+  const [searchQuery, setSearchQuery] = useState('')
 
   // Derive unique styles from loaded beers
   const availableStyles = useMemo(() => {
@@ -85,7 +86,18 @@ export default function HomePage() {
     return [...styles].sort((a, b) => a.localeCompare(b, 'es'))
   }, [beers])
 
-  const filtered = useMemo(() => applyFilters(beers, filters), [beers, filters])
+  const filtered = useMemo(() => {
+    let result = applyFilters(beers, filters)
+    if (searchQuery.trim()) {
+      const q = searchQuery.toLowerCase()
+      result = result.filter(b =>
+        b.name?.toLowerCase().includes(q) ||
+        b.brewery?.toLowerCase().includes(q) ||
+        b.style?.toLowerCase().includes(q)
+      )
+    }
+    return result
+  }, [beers, filters, searchQuery])
 
   const totalActive = [
     filters.origins, filters.styles, filters.colors, filters.turbidities,
@@ -139,6 +151,23 @@ export default function HomePage() {
               {loading ? '' : `${filtered.length} cerveza${filtered.length !== 1 ? 's' : ''}`}
               {totalActive > 0 && !loading ? ` · ${totalActive} filtro${totalActive !== 1 ? 's' : ''} activo${totalActive !== 1 ? 's' : ''}` : ''}
             </span>
+          </div>
+
+          <div className="home-layout__search">
+            <input
+              type="text"
+              className="home-layout__search-input"
+              placeholder="Buscar por nombre, cervecería o estilo…"
+              value={searchQuery}
+              onChange={e => setSearchQuery(e.target.value)}
+            />
+            {searchQuery && (
+              <button
+                type="button"
+                className="home-layout__search-clear"
+                onClick={() => setSearchQuery('')}
+              >×</button>
+            )}
           </div>
 
           <BeerGrid beers={filtered} loading={loading} />

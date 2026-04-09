@@ -228,6 +228,36 @@
   background: rgba(255,255,255,0.9);
 }
 
+/* Search input inside filter group (e.g. Tipo de cerveza) */
+.filter-group__search {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--bg-page);
+  border: 1px solid var(--border-input);
+  border-radius: var(--radius-input);
+  padding: 6px 10px;
+  font-size: 0.82rem;
+  color: var(--text-primary);
+  font-family: inherit;
+  outline: none;
+  margin-bottom: var(--space-sm);
+  transition: border-color var(--transition);
+}
+
+.filter-group__search:focus {
+  border-color: var(--green-primary);
+}
+
+.filter-group__search::placeholder {
+  color: var(--text-muted);
+}
+
+.filter-group__no-results {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
 /* Clear link inside group when something is active */
 .filter-group__clear {
   background: none;
@@ -384,6 +414,53 @@
 .home-layout__count {
   font-size: 0.82rem;
   color: var(--text-muted);
+}
+
+/* ---- Search bar ---- */
+.home-layout__search {
+  position: relative;
+  margin-bottom: var(--space-md);
+}
+
+.home-layout__search-input {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--bg-card);
+  border: 1px solid var(--border-input);
+  border-radius: var(--radius-input);
+  padding: 10px 40px 10px 14px;
+  font-size: 0.92rem;
+  color: var(--text-primary);
+  font-family: inherit;
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.home-layout__search-input:focus {
+  border-color: var(--green-primary);
+}
+
+.home-layout__search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.home-layout__search-clear {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  line-height: 1;
+  padding: 2px 4px;
+  transition: color var(--transition);
+}
+
+.home-layout__search-clear:hover {
+  color: var(--text-primary);
 }
 
 @media (max-width: 820px) {

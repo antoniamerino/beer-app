@@ -16,9 +16,17 @@ const BITTERNESS_OPTIONS = [1, 2, 3, 4, 5]
  * Clicking an active chip removes it.
  * If all options end up selected, reset to [] (no filter).
  */
-function FilterGroup({ title, options, selected, onChange }) {
+function FilterGroup({ title, options, selected, onChange, searchable }) {
   const [open, setOpen] = useState(false)
+  const [query, setQuery] = useState('')
   const isFiltered = selected.length > 0
+
+  const visibleOptions = searchable && query.trim()
+    ? options.filter(opt => {
+        const label = typeof opt === 'object' ? opt.label : opt
+        return label.toLowerCase().includes(query.toLowerCase())
+      })
+    : options
 
   function toggle(value) {
     if (selected.includes(value)) {
@@ -26,7 +34,6 @@ function FilterGroup({ title, options, selected, onChange }) {
       onChange(next)
     } else {
       const next = [...selected, value]
-      // If all options selected, treat as "no filter"
       onChange(next.length === options.length ? [] : next)
     }
   }
@@ -43,13 +50,23 @@ function FilterGroup({ title, options, selected, onChange }) {
 
       {open && (
         <div className="filter-group__body">
+          {searchable && (
+            <input
+              className="filter-group__search"
+              type="text"
+              placeholder="Buscar tipo…"
+              value={query}
+              onChange={e => setQuery(e.target.value)}
+              onClick={e => e.stopPropagation()}
+            />
+          )}
           {isFiltered && (
             <button type="button" className="filter-group__clear" onClick={() => onChange([])}>
               Limpiar
             </button>
           )}
           <div className="filter-group__chips">
-            {options.map(opt => {
+            {visibleOptions.map(opt => {
               const value = typeof opt === 'object' ? opt.value : opt
               const label = typeof opt === 'object' ? opt.label : opt
               const active = selected.includes(value)
@@ -64,6 +81,9 @@ function FilterGroup({ title, options, selected, onChange }) {
                 </button>
               )
             })}
+            {visibleOptions.length === 0 && (
+              <span className="filter-group__no-results">Sin resultados</span>
+            )}
           </div>
         </div>
       )}
@@ -202,6 +222,7 @@ export default function FilterSidebar({ filters, onChange, availableStyles, isOp
           options={availableStyles}
           selected={filters.styles}
           onChange={v => set('styles', v)}
+          searchable
         />
       )}
 
