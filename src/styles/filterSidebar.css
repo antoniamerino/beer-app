@@ -330,29 +330,6 @@
   gap: 4px;
 }
 
-.cols-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
-  border-radius: var(--radius-sm);
-  padding: 6px 7px;
-  color: var(--text-muted);
-  cursor: pointer;
-  transition: all var(--transition);
-}
-
-.cols-btn:hover {
-  border-color: var(--green-primary);
-  color: var(--text-secondary);
-}
-
-.cols-btn--active {
-  background: var(--green-pale);
-  border-color: var(--green-primary);
-  color: var(--green-light);
-}
 
 .home-bar__sort .filter-sidebar__select {
   width: auto;
