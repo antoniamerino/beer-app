@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { useBeer } from '../hooks/useBeer'
 import TastingSheet from '../components/beer/TastingSheet'
-import Badge from '../components/ui/Badge'
 import LoadingSpinner from '../components/ui/LoadingSpinner'
 import '../styles/tastingSheet.css'
 
@@ -37,26 +36,45 @@ export default function BeerDetailPage() {
         )}
 
         <div className="beer-hero__info">
-          <div className="beer-hero__badges">
-            <Badge variant="default">{beer.style}</Badge>
-            {beer.origin && (
-              <Badge variant={beer.origin === 'Nacional' ? 'green' : 'gold'}>
-                {beer.origin}{beer.country ? ` · ${beer.country}` : ''}
-              </Badge>
+          <div className="beer-hero__name-row">
+            <h1 className="beer-hero__name">{beer.name}</h1>
+            {activeTasting?.score != null && (
+              <div className="beer-hero__score">
+                <span className="beer-hero__score-value">{activeTasting.score}</span>
+                <span className="beer-hero__score-max">/10</span>
+              </div>
             )}
           </div>
 
-          <div>
-            <h1 className="beer-hero__name">{beer.name}</h1>
-            <p className="beer-hero__brewery">{beer.brewery}</p>
+          <div className="beer-hero__meta">
+            {beer.brewery && (
+              <p className="beer-hero__meta-row">
+                <span className="beer-hero__meta-label">Cervecería</span>
+                <span>{beer.brewery}</span>
+              </p>
+            )}
+            {beer.style && (
+              <p className="beer-hero__meta-row">
+                <span className="beer-hero__meta-label">Tipo</span>
+                <span>{beer.style}</span>
+              </p>
+            )}
+            {beer.origin && (
+              <p className="beer-hero__meta-row">
+                <span className="beer-hero__meta-label">Origen</span>
+                <span>{beer.origin}{beer.country ? ` · ${beer.country}` : ''}</span>
+              </p>
+            )}
           </div>
 
-          {activeTasting?.score != null && (
-            <div className="beer-hero__score">
-              <span className="beer-hero__score-value">{activeTasting.score}</span>
-              <span className="beer-hero__score-max">/10</span>
-            </div>
-          )}
+          <a
+            className="beer-hero__where-to-buy"
+            href={`https://www.google.com/search?q=${encodeURIComponent(`comprar ${beer.name} ${beer.brewery} ${beer.style ?? ''} Chile`)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ¿Dónde comprar?
+          </a>
         </div>
       </div>
 

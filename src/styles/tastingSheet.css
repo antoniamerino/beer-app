@@ -58,6 +58,13 @@
   gap: var(--space-xs);
 }
 
+.beer-hero__name-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
 .beer-hero__name {
   font-size: 2rem;
   font-weight: 700;
@@ -69,10 +76,55 @@
   color: var(--text-secondary);
 }
 
+.beer-hero__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.beer-hero__meta-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.beer-hero__meta-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.beer-hero__meta-row span:last-child {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
 .beer-hero__score {
   display: flex;
   align-items: baseline;
   gap: 4px;
+}
+
+.beer-hero__where-to-buy {
+  display: inline-block;
+  margin-top: var(--space-sm);
+  padding: 7px 16px;
+  background: none;
+  border: 1px solid var(--border-input);
+  border-radius: var(--radius-btn);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all var(--transition);
+}
+
+.beer-hero__where-to-buy:hover {
+  border-color: var(--green-primary);
+  color: var(--text-primary);
+  background: var(--green-pale);
 }
 
 .beer-hero__score-value {
@@ -204,31 +256,69 @@
     padding: var(--space-md) var(--space-sm);
   }
 
+  /* Siempre lado a lado: foto izquierda, info derecha */
   .beer-hero {
-    grid-template-columns: 1fr;
-    gap: var(--space-md);
+    grid-template-columns: 110px 1fr;
+    gap: var(--space-sm);
+    align-items: start;
   }
 
-  /* On mobile show photo at natural 4:5 but capped */
-  .beer-hero__photo {
-    width: 100%;
-    max-width: 220px;
-    aspect-ratio: 4 / 5;
-    border-radius: var(--radius-card);
-  }
-
+  .beer-hero__photo,
   .beer-hero__photo-placeholder {
     width: 100%;
-    max-width: 220px;
+    aspect-ratio: 4 / 5;
     border-radius: var(--radius-card);
+    font-size: 2.5rem;
+  }
+
+  .beer-hero__info {
+    gap: var(--space-sm);
+  }
+
+  /* Nombre + puntuacion en la misma fila */
+  .beer-hero__name-row {
+    align-items: center;
   }
 
   .beer-hero__name {
-    font-size: 1.4rem;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  .beer-hero__score {
+    flex-shrink: 0;
   }
 
   .beer-hero__score-value {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
+  }
+
+  .beer-hero__score-max {
+    font-size: 0.9rem;
+  }
+
+  /* Meta fields en horizontal: 3 columnas */
+  .beer-hero__meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px var(--space-xs);
+  }
+
+  .beer-hero__meta-row {
+    gap: 2px;
+  }
+
+  .beer-hero__meta-label {
+    font-size: 0.62rem;
+  }
+
+  .beer-hero__meta-row span:last-child {
+    font-size: 0.78rem;
+  }
+
+  .beer-hero__where-to-buy {
+    font-size: 0.75rem;
+    padding: 5px 10px;
   }
 
   .tasting-attrs {
