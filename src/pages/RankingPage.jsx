@@ -25,10 +25,14 @@ export default function RankingPage() {
       if (!map[beer.brewery]) {
         map[beer.brewery] = {
           brewery: beer.brewery,
-          origin:  beer.origin || '',
+          origin:  '',
           scores:  [],
           beers:   [],
         }
+      }
+      // Use first non-empty origin found across all beers of the brewery
+      if (!map[beer.brewery].origin && beer.origin) {
+        map[beer.brewery].origin = beer.origin
       }
       map[beer.brewery].scores.push(score)
       map[beer.brewery].beers.push(beer)
