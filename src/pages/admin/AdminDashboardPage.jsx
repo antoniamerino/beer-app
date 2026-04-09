@@ -5,12 +5,14 @@ import { supabase } from '../../lib/supabase'
 import LoadingSpinner from '../../components/ui/LoadingSpinner'
 import EmptyState from '../../components/ui/EmptyState'
 import '../../styles/admin.css'
+import '../../styles/adminConfig.css'
 
 export default function AdminDashboardPage() {
   const navigate = useNavigate()
   const { beers, loading } = useBeers()
   const [search, setSearch] = useState('')
   const [deletingId, setDeletingId] = useState(null)
+  const [confirmBeer, setConfirmBeer] = useState(null)
 
   const sorted = [...beers].sort((a, b) =>
     new Date(b.latestTasting?.tasting_date ?? 0) - new Date(a.latestTasting?.tasting_date ?? 0)
@@ -23,11 +25,13 @@ export default function AdminDashboardPage() {
 
   async function handleDelete(e, beer) {
     e.stopPropagation()
-    const confirmed = window.confirm(
-      `¿Seguro que querés eliminar "${beer.name}" de ${beer.brewery}?\n\nEsta acción no se puede deshacer.`
-    )
-    if (!confirmed) return
+    setConfirmBeer(beer)
+  }
 
+  async function confirmDelete() {
+    if (!confirmBeer) return
+    const beer = confirmBeer
+    setConfirmBeer(null)
     setDeletingId(beer.id)
     try {
       await supabase.from('tastings').delete().eq('beer_id', beer.id)
@@ -43,6 +47,24 @@ export default function AdminDashboardPage() {
 
   return (
     <div className="admin-dashboard">
+
+      {confirmBeer && (
+        <div className="config-confirm" style={{ margin: '0 0 var(--space-lg)' }}>
+          <p className="config-confirm__text">
+            ¿Eliminar <strong>"{confirmBeer.name}"</strong> de {confirmBeer.brewery}?<br />
+            <span>Esta acción no se puede deshacer.</span>
+          </p>
+          <div className="config-confirm__btns">
+            <button type="button" className="action-link" onClick={() => setConfirmBeer(null)}>
+              Cancelar
+            </button>
+            <button type="button" className="action-link action-link--danger" onClick={confirmDelete}>
+              Sí, eliminar
+            </button>
+          </div>
+        </div>
+      )}
+
       <div className="admin-dashboard__header">
         <div>
           <h1>Panel de administración</h1>

@@ -21,11 +21,12 @@ export default function AdminConfigPage() {
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState('')
   const [deletingId, setDeletingId] = useState(null)
+  // inline confirm: stores the row pending deletion
+  const [confirmRow, setConfirmRow] = useState(null)
 
   const category = CATEGORIES.find(c => c.key === active)
   const rows = options[active] || []
 
-  // Unique groups for beer_styles
   const existingGroups = active === 'beer_styles'
     ? [...new Set(rows.map(r => r.group_name).filter(Boolean))]
     : []
@@ -52,18 +53,15 @@ export default function AdminConfigPage() {
     reload()
   }
 
-  async function handleDelete(row) {
-    const confirmed = window.confirm(
-      `¿Eliminar "${row.value}"?\n\nSi alguna cata ya usa esta opción, seguirá guardada pero no aparecerá disponible al editar.`
-    )
-    if (!confirmed) return
-    setDeletingId(row.id)
-    await supabase.from('tasting_options').delete().eq('id', row.id)
+  async function confirmDelete() {
+    if (!confirmRow) return
+    setDeletingId(confirmRow.id)
+    setConfirmRow(null)
+    await supabase.from('tasting_options').delete().eq('id', confirmRow.id)
     setDeletingId(null)
     reload()
   }
 
-  // Group rows for beer_styles display
   function groupedRows() {
     if (!category.hasGroups) return null
     const map = {}
@@ -75,6 +73,23 @@ export default function AdminConfigPage() {
     return map
   }
 
+  function renderChip(row) {
+    return (
+      <div key={row.id} className="config-chip">
+        <span>{row.value}</span>
+        <button
+          className="config-chip__delete"
+          type="button"
+          onClick={() => setConfirmRow(row)}
+          disabled={deletingId === row.id}
+          aria-label={`Eliminar ${row.value}`}
+        >
+          {deletingId === row.id ? '…' : '×'}
+        </button>
+      </div>
+    )
+  }
+
   return (
     <div className="admin-page">
       <div className="admin-page__header">
@@ -84,6 +99,24 @@ export default function AdminConfigPage() {
         </div>
         <Link to="/admin" className="action-link">← Volver al panel</Link>
       </div>
+
+      {/* Inline delete confirmation */}
+      {confirmRow && (
+        <div className="config-confirm">
+          <p className="config-confirm__text">
+            ¿Eliminar <strong>"{confirmRow.value}"</strong>?<br />
+            <span>Si alguna cata ya usa esta opción, seguirá guardada pero no aparecerá al editar.</span>
+          </p>
+          <div className="config-confirm__btns">
+            <button type="button" className="action-link" onClick={() => setConfirmRow(null)}>
+              Cancelar
+            </button>
+            <button type="button" className="action-link action-link--danger" onClick={confirmDelete}>
+              Sí, eliminar
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Category tabs */}
       <div className="config-tabs">
@@ -103,49 +136,23 @@ export default function AdminConfigPage() {
           <h2 className="config-panel__title">{category.label}</h2>
           <p className="config-panel__count">{rows.length} opción{rows.length !== 1 ? 'es' : ''}</p>
 
-          {/* Options list */}
           <div className="config-options">
             {category.hasGroups ? (
               Object.entries(groupedRows()).map(([group, groupRows]) => (
                 <div key={group} className="config-group">
                   <h3 className="config-group__title">{group}</h3>
                   <div className="config-chips">
-                    {groupRows.map(row => (
-                      <div key={row.id} className="config-chip">
-                        <span>{row.value}</span>
-                        <button
-                          className="config-chip__delete"
-                          onClick={() => handleDelete(row)}
-                          disabled={deletingId === row.id}
-                          aria-label={`Eliminar ${row.value}`}
-                        >
-                          {deletingId === row.id ? '…' : '×'}
-                        </button>
-                      </div>
-                    ))}
+                    {groupRows.map(row => renderChip(row))}
                   </div>
                 </div>
               ))
             ) : (
               <div className="config-chips">
-                {rows.map(row => (
-                  <div key={row.id} className="config-chip">
-                    <span>{row.value}</span>
-                    <button
-                      className="config-chip__delete"
-                      onClick={() => handleDelete(row)}
-                      disabled={deletingId === row.id}
-                      aria-label={`Eliminar ${row.value}`}
-                    >
-                      {deletingId === row.id ? '…' : '×'}
-                    </button>
-                  </div>
-                ))}
+                {rows.map(row => renderChip(row))}
               </div>
             )}
           </div>
 
-          {/* Add form */}
           <form className="config-add-form" onSubmit={handleAdd}>
             <h3 className="config-add-form__title">Agregar nueva opción</h3>
             {error && <p className="config-add-form__error">{error}</p>}

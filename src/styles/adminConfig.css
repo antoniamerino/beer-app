@@ -1,3 +1,32 @@
+/* ---- Inline confirm ---- */
+.config-confirm {
+  background: rgba(220, 60, 60, 0.1);
+  border: 1px solid rgba(220, 60, 60, 0.3);
+  border-radius: var(--radius-card);
+  padding: var(--space-md) var(--space-lg);
+  margin-bottom: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.config-confirm__text {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.config-confirm__text span {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.config-confirm__btns {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
 /* ---- Config tabs ---- */
 .config-tabs {
   display: flex;

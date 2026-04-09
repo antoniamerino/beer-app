@@ -7,16 +7,12 @@ export default function BeerCard({ beer }) {
 
   return (
     <Link to={`/beer/${beer.id}`} className="beer-card">
-      {beer.photo_url ? (
-        <img
-          src={beer.photo_url}
-          alt={beer.name}
-          className="beer-card__photo"
-          loading="lazy"
-        />
-      ) : (
-        <div className="beer-card__photo-placeholder">🍺</div>
-      )}
+      <img
+        src={beer.photo_url || '/default.png'}
+        alt={beer.name}
+        className="beer-card__photo"
+        loading="lazy"
+      />
 
       <div className="beer-card__body">
         <div className="beer-card__name">{beer.name}</div>

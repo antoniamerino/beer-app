@@ -1,46 +1,23 @@
 import { useRef, useState } from 'react'
-import { supabase } from '../../lib/supabase'
-import CameraModal from './CameraModal'
+import CropModal from './CropModal'
 
 export default function PhotoUpload({ currentUrl, onUpload }) {
   const galleryRef = useRef()
-  const [uploading, setUploading] = useState(false)
   const [preview, setPreview] = useState(currentUrl || null)
   const [uploadError, setUploadError] = useState('')
-  const [showCamera, setShowCamera] = useState(false)
+  const [cropFile, setCropFile] = useState(null)
 
-  async function handleFileChange(e) {
+  function handleFileChange(e) {
     const file = e.target.files?.[0]
     if (!file) return
-
-    setPreview(URL.createObjectURL(file))
+    e.target.value = '' // reset so same file can be re-selected
     setUploadError('')
-    setUploading(true)
-
-    const ext = file.name.split('.').pop().toLowerCase() || 'jpg'
-    const path = `beer-${Date.now()}.${ext}`
-
-    const { error } = await supabase.storage
-      .from('beer-photos')
-      .upload(path, file, { upsert: true })
-
-    setUploading(false)
-
-    if (error) {
-      setPreview(currentUrl || null)
-      setUploadError(`No se pudo subir la foto: ${error.message}`)
-      if (galleryRef.current) galleryRef.current.value = ''
-      return
-    }
-
-    const { data } = supabase.storage.from('beer-photos').getPublicUrl(path)
-    onUpload(data.publicUrl)
+    setCropFile(file)
   }
 
-  function handleCameraCapture(publicUrl, localPreview) {
+  function handleCaptured(publicUrl, localPreview) {
     setPreview(localPreview)
-    setUploadError('')
-    setShowCamera(false)
+    setCropFile(null)
     onUpload(publicUrl)
   }
 
@@ -48,12 +25,10 @@ export default function PhotoUpload({ currentUrl, onUpload }) {
     setPreview(null)
     setUploadError('')
     onUpload('')
-    if (galleryRef.current) galleryRef.current.value = ''
   }
 
   return (
     <div className="photo-upload">
-      {/* Hidden input for gallery */}
       <input
         ref={galleryRef}
         type="file"
@@ -62,10 +37,11 @@ export default function PhotoUpload({ currentUrl, onUpload }) {
         onChange={handleFileChange}
       />
 
-      {showCamera && (
-        <CameraModal
-          onCapture={handleCameraCapture}
-          onClose={() => setShowCamera(false)}
+      {cropFile && (
+        <CropModal
+          file={cropFile}
+          onCapture={handleCaptured}
+          onClose={() => setCropFile(null)}
         />
       )}
 
@@ -86,11 +62,6 @@ export default function PhotoUpload({ currentUrl, onUpload }) {
         <div className="photo-upload__preview-wrapper">
           <div className="photo-upload__preview-crop">
             <img src={preview} alt="Preview" className="photo-upload__preview-img" />
-            {uploading && (
-              <div className="photo-upload__uploading-overlay">
-                <span>Subiendo…</span>
-              </div>
-            )}
           </div>
           <p className="photo-upload__crop-hint">Así se verá en la tarjeta de la cerveza</p>
           <div className="photo-upload__actions">
@@ -98,7 +69,6 @@ export default function PhotoUpload({ currentUrl, onUpload }) {
               type="button"
               className="photo-upload__btn"
               onClick={() => galleryRef.current.click()}
-              disabled={uploading}
             >
               🖼 Cambiar foto
             </button>
@@ -106,7 +76,6 @@ export default function PhotoUpload({ currentUrl, onUpload }) {
               type="button"
               className="photo-upload__btn photo-upload__btn--danger"
               onClick={handleRemove}
-              disabled={uploading}
             >
               🗑 Eliminar
             </button>
@@ -118,19 +87,9 @@ export default function PhotoUpload({ currentUrl, onUpload }) {
             type="button"
             className="photo-upload__trigger-btn"
             onClick={() => galleryRef.current.click()}
-            disabled={uploading}
           >
             <span className="photo-upload__trigger-icon">🖼</span>
-            <span>Elegir de la galería</span>
-          </button>
-          <button
-            type="button"
-            className="photo-upload__trigger-btn"
-            onClick={() => setShowCamera(true)}
-            disabled={uploading}
-          >
-            <span className="photo-upload__trigger-icon">📷</span>
-            <span>Sacar foto</span>
+            <span>Elegir foto</span>
           </button>
         </div>
       )}
