@@ -501,6 +501,10 @@
 }
 
 @media (max-width: 820px) {
+  .home-hero__img {
+    max-height: 28vh;
+  }
+
   .home-layout {
     flex-direction: column;
     gap: var(--space-sm);
