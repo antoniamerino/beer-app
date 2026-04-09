@@ -8,6 +8,19 @@ import '../styles/beerGrid.css'
 
 const HERO_IMG = '/beers.jpeg'
 
+function ColsIcon({ n }) {
+  const gap = 2
+  const total = 24
+  const w = (total - gap * (n - 1)) / n
+  return (
+    <svg width={total} height={9} viewBox={`0 0 ${total} 9`} fill="currentColor">
+      {Array.from({ length: n }, (_, i) => (
+        <rect key={i} x={i * (w + gap)} y={0} width={w} height={9} rx={1} />
+      ))}
+    </svg>
+  )
+}
+
 
 const DEFAULT_FILTERS = {
   origins: [],         // [] = all
@@ -150,15 +163,17 @@ export default function HomePage() {
             </div>
 
             <div className="home-bar__cols">
-              <select
-                className="filter-sidebar__select"
-                value={mobileCols}
-                onChange={e => setMobileCols(Number(e.target.value))}
-              >
-                <option value={2}>2 col</option>
-                <option value={3}>3 col</option>
-                <option value={4}>4 col</option>
-              </select>
+              {[2, 3, 4].map(n => (
+                <button
+                  key={n}
+                  type="button"
+                  className={`cols-btn${mobileCols === n ? ' cols-btn--active' : ''}`}
+                  onClick={() => setMobileCols(n)}
+                  title={`${n} columnas`}
+                >
+                  <ColsIcon n={n} />
+                </button>
+              ))}
             </div>
 
             <span className="home-layout__count">

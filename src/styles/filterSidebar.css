@@ -327,7 +327,37 @@
 .home-bar__cols {
   display: none;
   align-items: center;
-  gap: 4px;
+  gap: 0;
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-btn);
+  overflow: hidden;
+}
+
+.cols-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
+  border: none;
+  border-right: 1px solid var(--border-card);
+  padding: 7px 9px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.cols-btn:last-child {
+  border-right: none;
+}
+
+.cols-btn:hover {
+  background: var(--green-pale);
+  color: var(--text-secondary);
+}
+
+.cols-btn--active {
+  background: var(--green-pale);
+  color: var(--green-light);
 }
 
 
