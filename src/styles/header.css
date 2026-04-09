@@ -33,6 +33,18 @@
   white-space: nowrap;
 }
 
+.header__logo-img {
+  height: 50px;
+  width: 50px;
+  display: block;
+}
+
+.header__logo-img {
+  height: 50px;
+  width: 50px;
+  display: block;
+}
+
 .header__nav {
   display: flex;
   align-items: center;

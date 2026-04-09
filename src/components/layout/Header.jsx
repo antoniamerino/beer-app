@@ -9,7 +9,7 @@ export default function Header() {
     <header className="header">
       <div className="header__inner">
         <Link to="/" className="header__logo">
-          <span className="header__logo-text">Cervezas Diego</span>
+          <img src="/logo-ddm.svg" alt="Cata Cervezas DDM" className="header__logo-img" />
         </Link>
 
         <nav className="header__nav">

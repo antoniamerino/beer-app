@@ -8,7 +8,7 @@ export default function Footer() {
       fontSize: '0.85rem',
       background: 'var(--bg-card)',
     }}>
-      Cervezas Diego · Registro personal de catas
+      Cata de cervezas · Diego della Maggiora
     </footer>
   )
 }
