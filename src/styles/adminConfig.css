@@ -1,0 +1,197 @@
+/* ---- Config tabs ---- */
+.config-tabs {
+  display: flex;
+  gap: var(--space-xs);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: var(--space-sm);
+}
+
+.config-tab {
+  background: none;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 7px var(--space-md);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition);
+  font-family: inherit;
+}
+
+.config-tab:hover {
+  border-color: var(--green-light);
+  color: var(--text-primary);
+}
+
+.config-tab--active {
+  background: var(--gold-pale);
+  border-color: var(--gold-primary);
+  color: var(--gold-primary);
+  font-weight: 600;
+}
+
+/* ---- Panel ---- */
+.config-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-card);
+  padding: var(--space-lg);
+}
+
+.config-panel__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  margin-bottom: 2px;
+}
+
+.config-panel__count {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+/* ---- Group headers (beer_styles) ---- */
+.config-group {
+  margin-bottom: var(--space-lg);
+}
+
+.config-group__title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+/* ---- Chips ---- */
+.config-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.config-chip {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--green-pale);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-badge);
+  padding: 4px 6px 4px 12px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.config-chip__delete {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+  border-radius: 50%;
+  transition: all var(--transition);
+  font-family: inherit;
+}
+
+.config-chip__delete:hover:not(:disabled) {
+  background: rgba(220, 60, 60, 0.15);
+  color: #f08080;
+}
+
+/* ---- Add form ---- */
+.config-add-form {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--border-light);
+}
+
+.config-add-form__title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-md);
+}
+
+.config-add-form__error {
+  font-size: 0.82rem;
+  color: #f08080;
+  margin-bottom: var(--space-sm);
+}
+
+.config-add-form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.config-add-form__group-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 280px;
+}
+
+.config-add-form__group-field label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.config-add-form__group-field input {
+  border: 1px solid var(--border-input);
+  border-radius: var(--radius-input);
+  padding: 8px var(--space-md);
+  background: var(--bg-page);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.config-add-form__group-field input:focus {
+  border-color: var(--green-primary);
+}
+
+.config-add-form__value-row {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.config-add-form__value-row input {
+  flex: 1;
+  min-width: 200px;
+  border: 1px solid var(--border-input);
+  border-radius: var(--radius-input);
+  padding: 8px var(--space-md);
+  background: var(--bg-page);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.config-add-form__value-row input:focus {
+  border-color: var(--green-primary);
+}
+
+@media (max-width: 600px) {
+  .config-tabs {
+    gap: 4px;
+  }
+  .config-tab {
+    font-size: 0.78rem;
+    padding: 6px 10px;
+  }
+  .config-panel {
+    padding: var(--space-md);
+  }
+}

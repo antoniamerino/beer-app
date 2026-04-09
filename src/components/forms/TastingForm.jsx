@@ -1,14 +1,20 @@
 import {
-  COLOR_OPTIONS, TURBIDITY_OPTIONS, FOAM_AMOUNT_OPTIONS,
-  FOAM_PERSISTENCE_OPTIONS, AROMA_INTENSITY_OPTIONS, AROMA_FLAVOR_NOTES,
+  TURBIDITY_OPTIONS, FOAM_AMOUNT_OPTIONS,
+  FOAM_PERSISTENCE_OPTIONS, AROMA_INTENSITY_OPTIONS,
   BODY_OPTIONS, CARBONATION_OPTIONS, ALCOHOL_PRESENCE_OPTIONS,
 } from '../../constants/tastingOptions'
+import { useTastingOptions } from '../../hooks/useTastingOptions'
 import SingleSelect from './SingleSelect'
 import MultiSelect from './MultiSelect'
 import ScoreSlider from './ScoreSlider'
 import BitternessSlider from './BitternessSlider'
 
 export default function TastingForm({ data, onChange }) {
+  const { values, loading } = useTastingOptions()
+
+  const colorOptions   = values('colors')
+  const aromaOptions   = values('aroma_notes')
+
   function set(field, value) {
     onChange({ ...data, [field]: value })
   }
@@ -36,8 +42,8 @@ export default function TastingForm({ data, onChange }) {
             <SingleSelect
               value={data.color}
               onChange={v => set('color', v)}
-              options={COLOR_OPTIONS}
-              placeholder="Seleccionar color"
+              options={colorOptions}
+              placeholder={loading ? 'Cargando…' : 'Seleccionar color'}
             />
           </div>
           <div className="form-group">
@@ -85,7 +91,7 @@ export default function TastingForm({ data, onChange }) {
           <div className="form-group form-grid--full">
             <label>Notas de aroma</label>
             <MultiSelect
-              options={AROMA_FLAVOR_NOTES}
+              options={aromaOptions}
               selected={data.aroma_notes || []}
               onChange={v => set('aroma_notes', v)}
             />
@@ -99,7 +105,7 @@ export default function TastingForm({ data, onChange }) {
           <div className="form-group form-grid--full">
             <label>Notas de sabor</label>
             <MultiSelect
-              options={AROMA_FLAVOR_NOTES}
+              options={aromaOptions}
               selected={data.flavor_notes || []}
               onChange={v => set('flavor_notes', v)}
             />

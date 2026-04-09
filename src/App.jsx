@@ -10,6 +10,7 @@ import LoginPage from './pages/LoginPage'
 import AdminDashboardPage from './pages/admin/AdminDashboardPage'
 import AddBeerPage from './pages/admin/AddBeerPage'
 import AdminBeerPage from './pages/admin/AdminBeerPage'
+import AdminConfigPage from './pages/admin/AdminConfigPage'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               <Route path="/admin" element={<AdminDashboardPage />} />
               <Route path="/admin/beer/new" element={<AddBeerPage />} />
               <Route path="/admin/beer/:id" element={<AdminBeerPage />} />
+              <Route path="/admin/config" element={<AdminConfigPage />} />
             </Route>
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

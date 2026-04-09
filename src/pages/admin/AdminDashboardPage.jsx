@@ -56,6 +56,9 @@ export default function AdminDashboardPage() {
             value={search}
             onChange={e => setSearch(e.target.value)}
           />
+          <Link to="/admin/config" className="action-link" style={{ whiteSpace: 'nowrap' }}>
+            ⚙ Opciones
+          </Link>
           <Link to="/admin/beer/new" className="btn-primary" style={{ textDecoration: 'none', whiteSpace: 'nowrap' }}>
             + Nueva cerveza
           </Link>

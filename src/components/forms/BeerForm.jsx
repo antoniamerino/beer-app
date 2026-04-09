@@ -1,8 +1,13 @@
-import { ORIGIN_OPTIONS, BEER_STYLE_GROUPS } from '../../constants/tastingOptions'
+import { useTastingOptions } from '../../hooks/useTastingOptions'
 import SingleSelect from './SingleSelect'
 import PhotoUpload from './PhotoUpload'
 
 export default function BeerForm({ data, onChange }) {
+  const { values, beerStyleGroups, loading } = useTastingOptions()
+
+  const originOptions = values('origins')
+  const styleGroups   = beerStyleGroups()
+
   function set(field, value) {
     onChange({ ...data, [field]: value })
   }
@@ -45,7 +50,7 @@ export default function BeerForm({ data, onChange }) {
             required
           >
             <option value="">Seleccionar estilo…</option>
-            {BEER_STYLE_GROUPS.map(({ group, styles }) => (
+            {styleGroups.map(({ group, styles }) => (
               <optgroup key={group} label={group}>
                 {styles.map(s => <option key={s} value={s}>{s}</option>)}
               </optgroup>
@@ -59,8 +64,8 @@ export default function BeerForm({ data, onChange }) {
             id="origin"
             value={data.origin}
             onChange={v => set('origin', v)}
-            options={ORIGIN_OPTIONS}
-            placeholder="Seleccionar origen"
+            options={originOptions}
+            placeholder={loading ? 'Cargando…' : 'Seleccionar origen'}
           />
         </div>
 
