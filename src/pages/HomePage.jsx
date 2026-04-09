@@ -115,7 +115,7 @@ export default function HomePage() {
             className="filter-mobile-btn"
             onClick={() => setSidebarOpen(o => !o)}
           >
-            🔍 Filtros
+            Filtros
             {totalActive > 0 && (
               <span className="filter-mobile-btn__count">{totalActive}</span>
             )}
